@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Common_FlashUpload, App_Web_ympsioqh" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>

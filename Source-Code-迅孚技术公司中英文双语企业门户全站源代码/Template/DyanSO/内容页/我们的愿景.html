@@ -1,0 +1,118 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{ZL.Label id="中文网站标题"/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="{$CssDir/}js/power-slider.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<style>
+.about_list .lt_p{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/} {background:url({$CssDir/}images/r_bg2.jpg) no-repeat;}
+.about_list .lt_p{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/} a{color:#fff;}
+</style>
+</head>
+<body>
+{ZL.Label id="中文版全站头部"/}
+<div class="list_img2" style="position:relative;">
+<div class="container">
+<div class="list_img_c pull-right">
+<a class="home_banner_c2" href="/">ENGLISH</a>
+</div>
+</div>
+<div id="breadcrumb" style="height:1px; position:absolute; top:265px; bottom:0; width:100%;"></div>
+</div>
+<div class="wap_breadcrumb">
+<span></span>
+<div class="container padding0">
+<ol class="breadcrumb">
+<li><a href="{ZL:GetNodeLinkUrl(19)/}">首页</a></li>
+<li><a href="{ZL:GetInfoUrl(129)/}">关于我们</a></li>
+<li class="active">{SField sid="文章模型数据源标签" FD="Title" page="0"/}</li>
+</ol>
+</div>
+</div> 
+<div class="container">
+<div class="vision_con">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 vision_con_l">
+<h1>总裁的话</h1>
+<p>
+<img src="{$CssDir/}images/vis_person.jpg" class="img-responsive" />
+<p>2005 年迅孚公司成立之时，正值中国加入世界贸易组织，
+加速融入世界经济体系之际。早期不少进入中国市场的
+国际公司，以及那些开拓海外市场的中国公司都在市场
+准入和本地业务增长方面遇到了诸多波折和各种挑战。
+迅孚公司抓住这个市场机会，及时调整经营方向，明确
+了公司的市场价值在于帮助客户企业顺利地在目标市场
+投放产品，有效降低来自产业政策和产品合规上的风险，
+同时帮助客户提升产品在目标市场上的竞争力。</p>
+<p>
+在过去的十年间，迅孚公司与客户们一道见证了并受益
+于中国汽车消费市场的快速发展。同时，我也自豪的看
+到迅孚公司从一家仅 2 个人初创公司成长为在多个城市
+设立有分支机构的初具规模的专业服务公司，培养出了
+一支有跨文化理解和交流能力的专业团队。我们的客户既有财富 500 强大型汽车和零部件公司，也有小
+规模的高端汽车品牌；既有大型贸易和服务企业，也有政府专业机构和协会。从今年起，我们开始为大型
+保险公司提供与车联网应用相关的市场研究和咨询服务。</p>
+<p>
+毋庸置疑，我们的客户都具有在不同的社会文化和经济制度背景下从事国际贸易或投资的丰富经验，他们
+最终选择迅孚公司作为合作伙伴或服务商，是因为我们深刻理解所担负的责任，始终践行客户所期望的
+职业标准和行为准则，以及由此而建立起来的品牌声誉和信任感 --- 这也是迅孚公司赖以存在的基础。我
+们对客户的厚爱保持感恩之心，始终如一地把 “成就客户，成就员工，做可信赖的合作伙伴” 作为迅孚公
+司经营的信念和原则，为客户创造价值，帮助员工成长。也唯有如此，我们才能实现公司的愿景，成为
+一家受人尊敬的，有价值的专业服务公司。</p>
+<p>
+如果您有意愿了解迅孚公司更多，包括我们的服务、我们的团队、我们的发展愿景，或者在迅孚公司的
+职业发展机会，请随时联系我们，我们的相关负责同事会尽快回复您。</p>
+
+<p class="text-right">感谢您的关注和支持！</p>
+<div class="text-right" style="padding-right:50px;"><img src="{$CssDir/}images/pic21.jpg" /><br /> 2015年6月23日</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="wap_right">
+<div class="about_list about_list_sc">
+<p class="first_list">关于我们</p>
+{ZL.Label id="输出文章_标题_排序" NodeID="20" ShowNum="3"/}
+</div>
+<div class="about_news"> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="中文版全站底部"/}
+</body>
+</html>
+<script>
+$(function () {
+	$("#about_news").powerSlider({delayTime:3000,sliderNum:5}); 
+})
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

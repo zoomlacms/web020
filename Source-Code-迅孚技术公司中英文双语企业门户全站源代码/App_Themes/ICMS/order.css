@@ -1,0 +1,91 @@
+﻿*{font-family:'Microsoft YaHei';font-size:12px;}
+ul{padding-left:0px;}
+ul li{list-style-type:none;}
+.form-control{width:240px;display:inline-block;}
+.control-md{width:160px;}
+.gray_border{border:1px solid #ddd;}
+.bordered {border-bottom: 1px solid #ddd;padding:5px;padding-left:15px;}
+.grayremind{font-size:12px;color:#666;}
+.max{width:90%;max-width:90%;}
+.strong{font-weight:600;font-size:14px;}
+.normalw{font-weight:normal;}
+.r_red_x{color: #e4393c;font-size:0.8em;}
+.r_red_mid{color:#e4393c;font-size:1.5em;}
+.r_red {color: #e4393c;font-size:1.8em;}
+.r_green_x{color:green;font-size:0.8em;}
+.r_green_mid{color:green;font-size:1.5em;}
+.error{color:#e4393c;font-size:12px;font-family:'Microsoft YaHei';margin-left:5px;}
+.padding_l55{padding-left:55px;}
+.padding_r10{padding-right:10px;}
+.margin_l5{margin-left:5px;}
+.margin_l20{margin-left:20px;}
+.margin_t20{margin-top:20px;}.margin_t5{margin-top:5px;}
+.main_div{ text-align: right; height: 35px; background: #F7F7F7; line-height: 35px; border-bottom: 1px solid #ddd;}
+.head_div{padding: 20px 0 10px;}
+.skey_div{width: 240px;margin-top:10px;}
+.skey_t{width: 190px; float: left;} 
+/*Table*/
+.table_title{background:#f3f3f3;border:1px solid #ddd;}
+.table>tbody>tr .tdline{line-height:80px;}
+.td_s{width:60px;}
+.td_m{width:100px;}
+.td_l{width:200px;}
+/*购物车会员登录*/ 
+.modal-header{ background:#f5f5f5; }
+.width350 {width:350px;}
+#loginModal .close{ padding:5px; background:#ccc; border-radius:100%; font-size:inherit;}
+#cart_login{ letter-spacing:20px;}
+.login_body{ padding:30px; padding-top:10px;} 
+.login_body li{ margin-top:10px; margin-bottom:10px;}
+.login_body li .pull-left{ font-size:1.4em;}
+.login_body li .pull-right{ font-size:1.2em; color:#f00;}
+.login_body li .pull-right a{ color:#f00;}
+.login_body li .fa-user{ padding-left:5px; padding-right:5px;}
+.login_body li .fa-key{ padding-left:4px; padding-right:3px;} 
+.login_body li .input-group{ width:100%;}
+.login_body li .input-group-addon{ color:#999;} 
+.login_body .CodeLi{ list-style:none; margin-left:30%;}
+.login_body .CodeLi input{ width:70px;}
+.login_body li .center-block{ width:100%;}
+ 
+#PnlLoginMessage{ color:#f00;}
+#next_btn:hover,#next_btn:active{ color:#fff;}
+/*Cart*/
+.preimg_m {width: 50px;height: 50px;}
+.preimg_l{width:80px;height:80px;}
+.totalmoney{color:#e4393c;font-size:1.3em;font-weight:700;}
+.trprice{color:#e4393c;font-weight:400;display:inline-block;line-height:30px;}
+.input-group-addon{padding-left:4px;padding-right:4px;}
+.minus{color:gray;font-size:8px;cursor:pointer;}
+.add{color:gray;font-size:8px;cursor:pointer;}
+.pronum_td{width:120px;text-align:center;}
+.pronum_text{text-align:center;}
+.site_bottom { padding-top:10px;  }
+.site_bottom .container { border-top:1px solid #ccc;}
+.site_bottom p { font-size:1.2em;}
+/*orderinfo*/
+#invoice_div{display:none;}
+.invoice_t{resize:none;height:60px;width:400px;margin-top:5px;display:block;}
+.head_r_img{float: right; margin-top: 15px; margin-right: 5px;}
+.indent{padding-left:20px;}
+.total{padding-right:18px;font-size:14px;font-weight:700;}
+.total i{color:#e4393c;font-size:20px;font-weight:normal;}
+.glyphicon-remove-sign{font-size:20px;}
+.tdtext{text-align: right; line-height: 30px;}
+/*地址*/
+.address_div{background: #f7f7f7; padding-left: 10px; height: 40px;line-height: 30px;}
+.address_head{color: #333; font-size: 18px; font-weight: 500; font-family: 'Microsoft YaHei';}
+.addresssul li{margin-bottom:3px;padding-left:5px;}
+.addresssul li:hover{background:#fff4d3;}
+.addresssul .active{background:#fff4d3;}
+/*支付方式*/
+.methodul li{float:left;cursor:pointer;border-radius:7px;background:#428bca;color:#fff;
+        margin-right:5px;width:80px;height:43px;text-align:center;line-height:40px;border:2px solid #fff;}
+.methodul .active{background:#57A5CA;border:2px solid #357ebd;}
+.methodul li:hover{background:#57A5CA;}
+.extenddiv{display:none;margin-left:18px;}
+.total_div{text-align: right; background: #f5f5f5; padding: 0px 10px;height:50px;line-height:50px;}
+@media (max-width:960px)
+{
+    .container{width:100%;padding-left:0px;padding-right:0px;}
+}

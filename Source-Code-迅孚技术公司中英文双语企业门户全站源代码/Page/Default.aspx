@@ -1,0 +1,2 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Pageindex, App_Web_eevosgs0" enableviewstatemac="false" enableEventValidation="false" viewStateEncryptionMode="Never" %>
+<html><head><title></title></head><body></body></html>

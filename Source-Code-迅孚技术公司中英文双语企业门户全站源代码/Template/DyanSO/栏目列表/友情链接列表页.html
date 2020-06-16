@@ -1,0 +1,90 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<style>
+.list_img1 { background:url({$CssDir/}images/pic31.jpg) center no-repeat;background-size:cover;  }
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="list_img1 list_img1">
+<div class="container">
+<div class="list_img_c pull-right">
+<a href="{ZL:GetNodeLinkUrl(19)/}">中文</a>
+</div>
+</div>
+</div>
+<div class="wap_breadcrumb">
+<span></span>
+<div class="container padding0">
+<ol class="breadcrumb">
+<li><a href="{ZL:GetNodeLinkUrl(19)/}">Dynaso</a></li>
+<li class="active">Client & Partner</li>
+</ol>
+</div>
+</div> 
+<div class="container">
+<div class="market_link">
+<ul class="list-unstyled">
+{ZL.Label id="根据父节点输出子节点" ParentID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="22" /}
+<li>
+<h1 style="margin-bottom:33px;">Business Partners</h1>
+<p style="color:#323232; margin-left:0;">Editisng in progress......</p>
+</li>
+</ul>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</div>
+</body>
+</html>
+<script>
+var flashvars={
+f:'/Template/DyanSO/style/images/DynaSo.mp4',
+v:100,
+c:0,
+b:1,
+p:1
+};
+var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+CKobject.embedSWF('/ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','500',flashvars,params);
+/*
+CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+下面三行是调用html5播放器用到的
+*/
+var video=['/Template/DyanSO/style/images/DynaSo.mp4->video/mp4'];
+var support=['iPad','iPhone','ios','android+false','msie10+false'];
+CKobject.embedHTML5('a1','ckplayer_a1','100%',500,video,flashvars,support);
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+
+
+</script>

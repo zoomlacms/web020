@@ -1,0 +1,769 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="User_I_Default, App_Web_0v50hcsc" clientidmode="Static" %>
+<%@ Register Src="~/User/ASCX/DefaultTop.ascx" TagName="UserMenu" TagPrefix="ZL" %><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="/dist/css/bootstrap.min.css" />
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="/dist/css/font-awesome.min.css"/>
+<link type="text/css" rel="stylesheet" href="/App_Themes/User.css" />
+<script type="text/javascript" src="/JS/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrap.min.js"></script> 
+<asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder></head>
+<body>
+<form id="form1" runat="server">
+<ZL:UserMenu runat="server" />
+<!--左侧头部min菜单-->
+
+<div class="u_fix_height"></div>  
+<div class="u_left_menu" id="user_left">
+        <div class="user_leftd">
+	    <div id="menu1" class="user_l_ul open">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu1_1" class="active">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>我的信息</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu1_1_0"><a href="/User/Info/UserInfo.aspx">帐号信息</a></li>
+			    <li id="menu1_1_1"><a href="/User/UserFunc/GPurchase.aspx">用户升级</a></li>
+			    <li id="menu1_1_2"><a href="/User/UserFunc/UserSignin.aspx">每日签到</a></li>
+			    <li id="menu1_1_3"><a href="/User/CashCoupon/ArriveManage.aspx">优惠券</a></li>
+			    <li id="menu1_1_4"><a href="/User/ConstPassen.aspx">常用客户</a></li>
+			    <li id="menu1_1_5"><a href="/User/Info/UserRecei.aspx">我的地址簿</a></li>
+			    <li id="menu1_1_6"><a href="/User/Info/UserDay.aspx">节日提醒</a></li>
+			    <li id="menu1_1_7"><a href="/User/Info/MyGetMoney.aspx">我的收入</a></li>
+			    <li id="menu1_1_8"><a href="/User/Info/MtrlsMrktng.aspx">推广收入</a></li>
+			    <li id="menu1_1_9"><a href="/User/Info/AdPlan.aspx">广告计划</a></li>
+			    <li id="menu1_1_10"><a href="/User/SetSecondPwd.aspx">支付密码</a></li>
+			    <li id="menu1_1_11"><a href="/User/ChangeEmail.aspx">修改邮箱</a></li>
+			    <li id="menu1_1_12"><a href="/User/ChangeMP.aspx">修改手机</a></li>
+			    <li id="menu1_1_13"><a href="/Plugins/Domain/DomName.aspx">注册域名</a></li>
+			    <li id="menu1_1_14"><a href="/User/PubManage.aspx">评论管理</a></li>
+			    <li id="menu1_1_15"><a href="/User/UserFunc/InviteCode.aspx">生成邀请码</a></li>
+                <li id="menu1_1_16"><a href="/User/Content/FileBuyManage.aspx">我的文件</a></li>
+			</ul>
+		    </li>
+		    <li id="menu1_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>订阅导航</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu1_2_1"><a href="/User/MySubscription.aspx">我的订阅</a></li>
+			    <li id="menu1_2_2"><a href="/User/BidList.aspx?type=myBid">我的竞标</a></li>
+			    <li id="menu1_2_3"><a href="/User/BidList.aspx?type=myJoin">我参与的竞标</a></li>
+			    <li id="menu1_2_4"><a href="/User/BidList.aspx?type=settlement">竞标结算</a></li>
+			    <li id="menu1_2_5"><a href="/Questions/Default.aspx">组卷系统</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu2" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu2_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>常规管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_1_1"><a href="/User/Content/MyContent.aspx">投稿管理</a></li>
+			    <li id="menu2_1_2"><a href="<%=CustomerPageAction.customPath2 %>AddOn/ProjectsList.aspx">项目列表</a></li>
+			    <li id="menu2_1_3"><a href="<%=CustomerPageAction.customPath2 %>AddOn/UserAddProjects.aspx">添加项目</a></li>
+			    <li id="menu2_1_4"><a href="/User/iServer/FiServer.aspx">有问必答</a></li>
+			</ul>
+		    </li>
+		    <li id="menu2_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>人才招聘</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_2_1"><a href="/Jobs/ExamineeList.aspx">面试通知</a></li>
+			    <li id="menu2_2_2"><a href="/CN/nite/Content/PositionManage.aspx">职位管理</a></li>
+			    <li id="menu2_2_3"><a href="/CN/Nite/Content/ResumeManage.aspx">简历管理</a></li>
+			    <li id="menu2_2_4"><a href="/CN/Nite/PersonHouse.aspx">视频房间申请</a></li>
+			    <li id="menu2_2_5"><a href="/CN/Nite/Content/CompanyHouseManage.aspx">视频房间管理</a></li>
+			    <li id="menu2_2_6"><a href="/CN/Nite/Content/VideoManage.aspx">企业视频</a></li>
+			    <li id="menu2_2_7"><a href="/User/Content/MyFavori.aspx">我的收藏</a></li>
+			</ul>
+		    </li>
+		    <li id="menu2_3">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>我的互动</a>
+			<ul class="list-unstyled display_none user_l_ulin">
+			    <li id="menu2_3_1"><a href="/User/Content/ManagePub.aspx">互动管理</a></li>
+			    <li id="menu2_3_2"><a href="/User/Content/CommentList.aspx">我的评论</a></li>
+			    <li id="menu2_3_3"><a href="/User/Message/Message.aspx">收件箱</a></li>
+			</ul>
+		    </li>
+		    <li id="menu2_4">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>我的问答</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_4_1"><a href="/User/Guest/MyAsk.aspx">我的提问</a></li>
+			    <li id="menu2_4_2"><a href="/User/Guest/MyAnswer.aspx">我的回答</a></li>
+			    <li id="menu2_4_3"><a href="/User/Guest/AskComment.aspx">我的评论</a></li>
+			    <li id="menu2_4_4"><a href="/User/Guest/MyApproval.aspx">我的赞同</a></li>
+			</ul>
+		    </li>
+		    <li id="menu2_5">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>我的百科</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_5_1"><a href="/User/Guest/BaikeContribution.aspx">词条贡献</a></li>
+			    <li id="menu2_5_2"><a href="/User/Guest/BaikeDraft.aspx">草稿箱</a></li>
+			    <li id="menu2_5_3"><a href="/User/Guest/BaikeFavorite.aspx">百科收藏</a></li>
+			</ul>
+		    </li>
+		    <li id="menu2_6">
+			<a href="#" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>威客竞标</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_6_1"><a href="/User/Content/ReleaseManager.aspx">竞标管理</a></li>
+			    <li id="menu2_6_2"><a href="/User/Content/MyCommentList.aspx">我参与的</a></li>
+			</ul>
+		    </li>
+            <li id="menu2_7">
+			<a href="#" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>智慧图表</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu2_7_1"><a href="/User/Content/ECharts/AddChart.aspx">创建图表</a></li>
+                <li id="menu2_7_2"><a href="/User/Content/ECharts/Default.aspx">图表列表</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu3" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu3_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>商城管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu3_1_1"><a href="/User/GroupList.aspx?start=true">我的团定</a></li>
+			    <li id="menu3_1_2"><a href="/User/Info/DredgeVip.aspx">VIP卡管理</a></li>
+			    <li id="menu3_1_3"><a href="/User/BossInfo/NodeTree.aspx">我的加盟商</a></li>
+			    <li id="menu3_1_4"><a href="/User/BossInfo/MeInfo.aspx">我的加盟信息</a></li>
+			    <li id="menu3_1_5"><a href="/User/Order/PreViewOrder.aspx?menu=Orderinfo">购物订单</a></li>
+			    <li id="menu3_1_6"><a href="/User/AddUserOrder.aspx">添加账单</a></li>
+			    <li id="menu3_1_7"><a href="/User/OrderForm/OrderSql.aspx">账单申请</a></li>
+			</ul>
+		    </li>
+		    <li id="menu3_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>店铺管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu3_2_1"><a href="/User/UserShop/Default.aspx">我的店铺</a></li>
+			    <li id="menu3_2_2"><a href="/User/UserShop/OrderList.aspx">我的订单</a></li> 
+			    <li id="menu3_2_4"><a href="/User/Profile/PointRecord.aspx">我的积分</a></li>
+			    <li id="menu3_2_5"><a href="/User/Profile/ExChangeRecord.aspx">兑换记录</a></li>
+			    <li id="menu3_2_6"><a href="/User/Profile/Accountinfo.aspx">收款信息设置</a></li>
+			    <%--<li id="menu3_2_7"><a href="/User/SiteManage/Default.aspx">分站联盟推广</a></li>--%>
+			    <li id="menu3_2_8"><a href="/User/Producter/ProducterManage.aspx">出售商品信息</a></li>
+			    <li id="menu3_2_9"><a href="/User/UserShop/Pay_View.aspx">支付平台</a></li>
+			    <li id="menu3_2_10"><a href="/User/UserShop/Pay_List.aspx">支付记录</a></li>
+			    <li id="menu3_2_11"><a href="/User/PrintServer/ImageList.aspx">Flex作品</a></li>
+			</ul>
+		    </li>
+		    <li id="menu3_3">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>推广赚钱</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu3_3_1"><a href="/User/PromotUnion/Default.aspx">赚钱计划</a></li>
+			    <li id="menu3_3_2"><a href="/User/PromotUnion/UserUnionInviteview.aspx">赚钱记录</a></li>
+			</ul>
+		</ul>
+	    </div>
+	    <div id="menu4" class="user_l_ul">
+		    <ul class="list-unstyled user_l_ulout">
+		    <li id="menu4_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>考试管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu4_1_1"><a href="/User/Questions/MyCoruse.aspx">我的课程</a></li>
+			    <li id="menu4_1_2"><a href="/User/Questions/ApplicationCourese.aspx">申请新课</a></li>
+			    <li id="menu4_1_3"><a href="/User/Questions/MyMarks.aspx">我的考试</a></li>
+			    <li id="menu4_1_4"><a href="/User/Questions/SelectAllStudent.aspx">我的成绩</a></li>
+			</ul>
+		    </li>
+		</ul>
+            <ul class="list-unstyled user_l_ulout">
+		    <li id="menu4_3">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>组卷管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu4_3_1"><a href="/User/Exam/QuestionManage.aspx" target="_blank">试题组卷</a></li>
+                <li id="menu4_3_6"><a href="/User/Exam/QuestList.aspx" target="_blank">试题管理</a></li>
+			    <li id="menu4_3_2"><a href="/User/Exam/Papers_System_Manage.aspx">试卷管理</a></li>
+			    <li id="menu4_3_3"><a href="/User/Exam/ToScore.aspx">试卷批阅</a></li>
+                <li id="menu4_3_4"><a href="/User/Exam/Question_Class_Manage.aspx">试题类别</a></li>
+			</ul>
+		    </li>
+		</ul>
+            <ul class="list-unstyled user_l_ulout">
+		    <li id="menu4_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>排课系统</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu4_2_1"><a href="/Mis/Ke/ConfigList.aspx">排课配置</a></li>
+                <li id="menu4_2_2"><a href="/User/Exam/ClassManage.aspx">班级管理</a></li>
+                <li id="menu4_2_3"><a href="/Mis/Ke/ExTeacherManage.aspx">教师管理</a></li>
+			    <li id="menu4_2_4"><a href="/Mis/Ke/AutoPk.aspx">自动排课</a></li>
+                <li id="menu4_2_5"><a href="/Mis/Ke/PkList.aspx">排课查询</a></li>
+                <li id="menu4_2_6"><a href="/Mis/Ke/DaiKeManage.aspx">代课管理</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu5" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu5_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>社区互动</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu5_1_1"><a href="/User/UserZone/Structure.aspx">企业结构</a></li>
+			    <li id="menu5_1_2"><a href="/User/UserZone/Default.aspx">我的空间</a></li>
+			    <li id="menu5_1_3"><a href="/User/UserZone/UserQuestFriend.aspx">社区交友</a></li>
+			    <li id="menu5_1_4"><a href="/User/Survey/SurveyAll.aspx">问卷投票</a></li>
+			    <li id="menu5_1_5"><a href="/User/Magazine/AddMagazine.aspx">电子杂志</a></li>
+			    <li id="menu5_1_6"><a href="/index" target="_blank">社区贴吧</a></li>
+			</ul>
+		    </li>
+		    <li id="menu5_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>聊天系统</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu5_2_1"><a href="/User/Usertalk/TalkLog.aspx">聊天记录</a></li>
+			</ul>
+		    </li>
+		    <li id="menu5_3">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>助写平台</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu5_3_1"><a href="/Edit/Default.aspx?ID=0">写作助理</a></li>
+			    <li id="menu5_3_2"><a href="/Edit/EditList.aspx">作品列表</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu6" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu6_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>聚合管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu6_1_1"><a href="/Space/SpaceManage.aspx">我的聚合</a></li>
+			    <li id="menu6_1_2"><a href="/Space/Default.aspx?id=1">聚合首页</a></li>
+			    <li id="menu6_1_3"><a href="/Space/list.aspx?id=1">聚合列表</a></li>
+			    <li id="menu6_1_4"><a href="/Space/About.aspx?id=1">聚合内容</a></li>
+			</ul>
+		    </li>
+		    <li id="menu6_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>用户收藏</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu6_2_1"><a href="/User/Content/MyFavori.aspx?type=1">内容收藏</a></li>
+			    <li id="menu6_2_2"><a href="/User/Content/MyFavite_Shop.aspx?type=2">商品收藏</a></li>
+			    <li id="menu6_2_3"><a href="/User/Content/MyFavite_UserShop.aspx?type=3">网店收藏</a></li>
+                <li id="menu6_2_4"><a href="/User/Content/MyFavori.aspx?type=4">问题收藏</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu7" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu7_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>企业黄页</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu7_1_1"><a href="/User/Pages/Default.aspx">企业黄页</a></li>
+			    <li id="menu7_1_2"><a href="/User/Pages/Modifyinfo.aspx">配置黄页</a></li>
+			    <li id="menu7_1_3"><a href="/User/Pages/ClassManage.aspx">栏目管理</a></li>
+			    <%--<li id="menu7_1_4"><a href="/User/Pages/ChangeSkins.aspx">设置黄页风格</a></li>--%>
+			    <li id="menu7_1_4"><a href="/User/Pages/PageInfo.aspx?menu=modifile">黄页信息</a></li>
+			    <li id="menu7_1_5"><a href="/User/Info/Certificate.aspx">公司证书</a></li>
+			</ul>
+		    </li>
+		    <li id="menu7_2">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>站群管理</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu7_2_1"><a href="#">智能建站</a></li>
+			    <li id="menu7_2_2"><a href="#">我的子站</a></li>
+			    <li id="menu7_2_3"><a href="#">信息审核</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	    <div id="menu8" class="user_l_ul">
+		<ul class="list-unstyled user_l_ulout">
+		    <li id="menu8_1">
+			<a href="javascript:;" class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>云端存储</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu8_1_1"><a href="/User/CloudManage.aspx?Type=file">我的文档</a></li>
+			    <li id="menu8_1_2"><a href="/User/CloudManage.aspx?Type=photo">我的相册</a></li>
+			    <li id="menu8_1_3"><a href="/User/CloudManage.aspx?Type=music">我的音乐</a></li>
+			    <li id="menu8_1_4"><a href="/User/CloudManage.aspx?Type=video">我的视频</a></li>
+			</ul>
+		    </li>
+		    <li id="menu8_2">
+			<a href="javascript:;"  class="u_left_head"><span class="glyphicon glyphicon-circle-arrow-down"></span>文件工厂</a>
+			<ul class="list-unstyled user_l_ulin display_none">
+			    <li id="menu8_2_1"><a href="/User/FileFactory/ContentManage.aspx">文件工厂</a></li>
+			    <li id="menu8_2_2"><a href="/User/FileFactory/Doc.aspx">模板设置</a></li>
+			</ul>
+		    </li>
+		</ul>
+	    </div>
+	</div>
+        <div class="u_left_control">
+            <i class="fa fa-angle-double-left"></i>
+        </div>
+        </div>
+<div class="u_ban page_ban text-center" id="u_ban">
+    <div class="container">
+        <div class="u_user" id="u_sub"><!--订阅导航-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-eye-open"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/MySubscription.aspx"><i class="glyphicon glyphicon-eye-open"></i>我的订阅</a></li>
+                    <li><a href="/User/BidList.aspx?type=myBid"><i class="fa fa-strikethrough"></i>我的竞标</a></li>
+                    <li><a href="/User/BidList.aspx?type=myJoin"><i class="fa fa-subscript"></i>我参与的竞标</a></li>
+                    <li><a href="/User/BidList.aspx?type=settlement"><i class="fa fa-strikethrough"></i>竞标结算</a></li>
+                    <li><a href="/User/Exam/Papers_System_Manage.aspx"><i class="glyphicon glyphicon-paperclip"></i>试卷管理</a></li>
+                    <li><a href="/User/Exam/QuestList.aspx"><i class="fa fa-file-text-o"></i>试题管理</a></li>
+                    <li><a href="/Questions/Default.aspx" target="_blank"><i class="fa fa-file-text-o"></i>组卷系统</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="u_user" id="u_UserInfo">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-user"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/UserInfo.aspx"><i class="fa fa-user"></i>帐号信息</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_GPurchase">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-star"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/UserFunc/GPurchase.aspx"><i class="fa fa-star"></i>用户升级</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_UserSignin">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-edit"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/UserFunc/UserSignin.aspx"><i class="glyphicon glyphicon-edit"></i>每日签到</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_ArriveManage">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-file"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/CashCoupon/ArriveManage.aspx"><i class="fa fa-file"></i>优惠券</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_ConstPassen">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-users"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/ConstPassen.aspx?type=2"><i class="fa fa-users"></i>客户管理</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_UserRecei">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-map-marker"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/UserRecei.aspx"><i class="fa fa-map-marker"></i>我的地址簿</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_UserDay">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-list-alt"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/UserDay.aspx"><i class="fa fa-list-alt"></i>节日提醒</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_MyGetMoney">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-dollar"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/MyGetMoney.aspx"><i class="fa fa-dollar"></i>我的收入</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_MtrlsMrktng">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-mail-forward"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/MtrlsMrktng.aspx"><i class="fa fa-mail-forward"></i>推广收入</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_AdPlan">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-life-ring"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Info/AdPlan.aspx"><i class="fa fa-life-ring"></i>广告计划</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_SetSecondPwd">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-lock"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/SetSecondPwd.aspx"><i class="fa fa-lock"></i>支付密码</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_ChangeEmail">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-envelope-o"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/ChangeEmail.aspx"><i class="fa fa-envelope-o"></i>修改邮箱</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_ChangeMP">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-phone"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/ChangeMP.aspx"><i class="glyphicon glyphicon-phone"></i>修改手机</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_DomName">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-edit"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/Plugins/Domain/DomName.aspx"><i class="glyphicon glyphicon-edit"></i>注册域名</a></div>
+            </div>
+        </div>
+        <div class="u_user" id="u_InviteCode">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-qrcode"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/UserFunc/InviteCode.aspx"><i class="fa fa-qrcode"></i>邀请码</a></div>
+            </div>
+        </div> 
+        <div class="u_user" id="u_Watermark">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-barcode"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/UserFunc/Watermark/"><i class="glyphicon glyphicon-barcode"></i>授权证书生成</a></div>
+            </div>
+        </div>  
+        <div class="u_user" id="u_cnt"><!--内容管理-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Content/MyContent.aspx"><i class="glyphicon glyphicon-edit"></i>投稿管理</a></li> 
+                    <li><a href="/User/iServer/FiServer.aspx"><i class="fa fa-comments-o"></i>有问必答</a></li>
+                    <li><a href="/User/Content/MyFavori.aspx?type=1"><i class="fa fa-heart"></i>内容收藏</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_pep"><!--人才招聘-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/Jobs/ExamineeList.aspx"><i class="fa fa-bullhorn"></i>面试通知</a></li> 
+			        <li><a href="/User/Content/MyFavori.aspx"><i class="fa fa-heart-o"></i>我的收藏</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_pub"><!--我的互动-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Content/ManagePub.aspx"><i class="glyphicon glyphicon-th-list"></i>互动管理</a></li>
+			        <li><a href="/User/Content/CommentList.aspx"><i class="fa fa-user"></i>我的评论</a></li>
+			        <li><a href="/User/Message/Message.aspx"><i class="fa fa-envelope-o"></i>收件箱</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_ask"><!--我的问答-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Guest/MyAsk.aspx"><i class="fa fa-question"></i>我的提问</a></li>
+			        <li><a href="/User/Guest/MyAnswer.aspx"><i class="fa fa-question-circle"></i>我的回答</a></li>
+			        <li><a href="/User/Guest/AskComment.aspx"><i class="fa fa-user"></i>我的评论</a></li>
+			        <li><a href="/User/Guest/MyApproval.aspx"><i class="fa fa-thumbs-o-up"></i>我的赞同</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_baike"><!--我的百科-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Guest/BaikeContribution.aspx"><i class="glyphicon glyphicon-text-color"></i>词条贡献</a></li>
+			        <li><a href="/User/Guest/BaikeDraft.aspx"><i class="fa fa-pencil"></i>草稿箱</a></li>
+			        <li><a href="/User/Guest/BaikeFavorite.aspx"><i class="fa fa-heart-o"></i>百科收藏</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_chart"><!--智慧图表-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-th-large"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Content/ECharts/AddChart.aspx"><i class="fa fa-plus"></i>创建图表</a></li>
+                    <li><a href="/User/Content/ECharts/Default.aspx"><i class="glyphicon glyphicon-th-list"></i>图表列表</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_shop"><!--商城管理-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-shopping-cart"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/GroupList.aspx?start=true"><i class="fa fa-shopping-cart"></i>我的团定</a></li>
+			        <li><a href="/User/Info/DredgeVip.aspx"><i class="fa  fa-credit-card"></i>VIP卡管理</a></li>
+			        <%--<li><a href="/User/BossInfo/NodeTree.aspx"><i class="fa fa-plus"></i>我的加盟商</a></li>--%> 
+			        <li><a href="/User/Order/PreViewOrder.aspx?menu=Orderinfo"><i class="fa fa-shopping-cart"></i>购物订单</a></li> 
+			        <li><a href="/User/OrderForm/OrderSql.aspx"><i class="fa  fa-paint-brush"></i>账单申请</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_store"><!--店铺管理-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-home"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/UserShop/Default.aspx"><i class="fa fa-home"></i>我的店铺</a></li>
+			        <li><a href="/User/UserShop/OrderList.aspx"><i class="fa fa-shopping-cart"></i>我的订单</a></li> 
+			        <li><a href="/User/Profile/PointRecord.aspx"><i class="fa fa-bitcoin"></i>我的积分</a></li>
+			        <li><a href="/User/Profile/ExChangeRecord.aspx"><i class="fa fa-history"></i>兑换记录</a></li>
+			        <li><a href="/User/Profile/Accountinfo.aspx"><i class="fa fa-cog"></i>收款信息设置</a></li>
+			        <%--<li><a href="/User/SiteManage/Default.aspx"><i class="fa fa-sitemap"></i>分站联盟推广</a></li>--%>
+			        <li><a href="/User/Producter/ProducterManage.aspx"><i class="fa fa-shield"></i>出售商品信息</a></li>
+			        <li><a href="/User/UserShop/Pay_View.aspx"><i class="fa fa-share-square-o"></i>支付平台</a></li>
+			        <li><a href="/User/UserShop/Pay_List.aspx"><i class="fa fa-history"></i>支付记录</a></li>
+			        <li><a href="/User/PrintServer/ImageList.aspx"><i class="fa fa-compass"></i>Flex作品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_promot"><!--推广赚钱-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-dollar"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/PromotUnion/Default.aspx"><i class="fa fa-dollar"></i>赚钱计划</a></li>
+			        <li><a href="/User/PromotUnion/UserUnionInviteview.aspx"><i class="fa fa-paint-brush"></i>赚钱记录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_exam"><!--考试管理-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-list-alt"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Questions/MyCoruse.aspx"><i class="fa fa-table"></i>我的课程</a></li>
+			        <li><a href="/User/Questions/ApplicationCourese.aspx"><i class="fa fa-repeat"></i>申请新课</a></li>
+			        <li><a href="/User/Questions/MyMarks.aspx"><i class="fa fa-indent"></i>我的考试</a></li>
+			        <li><a href="/User/Questions/SelectAllStudent.aspx"><i class="fa fa-star-o"></i>我的成绩</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_paper"><!--组卷管理-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-list-alt"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Exam/QuestionManage.aspx" target="_blank"><i class="fa fa-list-alt"></i>试题组卷</a></li>
+                    <li><a href="/User/Exam/QuestList.aspx" target="_blank"><i class="fa fa-bars"></i>试题管理</a></li>
+			        <li><a href="/User/Exam/Papers_System_Manage.aspx"><i class="fa fa-newspaper-o"></i>试卷管理</a></li>
+			        <li><a href="/User/Exam/ToScore.aspx"><i class="fa fa-edit"></i>试卷批阅</a></li>
+                    <li><a href="/User/Exam/Question_Class_Manage.aspx"><i class="fa fa-sort"></i>试题类别</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_ke"><!--排课系统-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-list-alt"></i>  
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Exam/QuestList.aspx"><i class="fa fa-file-text-o"></i>试题管理</a></li>
+                    <li><a href="/User/Exam/Papers_System_Manage.aspx"><i class="glyphicon glyphicon-paperclip"></i>试卷管理</a></li>
+                    <li><a href="/User/Exam/QuestionManage.aspx" target="_blank"><i class="fa fa-copy"></i>组卷系统</a></li>
+                    <li><a href="/User/Exam/ToScore.aspx"><i class="glyphicon glyphicon-list-alt"></i>试卷批阅</a></li>
+                    <li><a href="/User/Questions/MyMarks.aspx"><i class="fa fa-edit "></i>我的考试</a></li>
+                    <li><a href="/User/Questions/MyExamResult.aspx"><i class="fa fa-dot-circle-o"></i>考试结果</a></li>
+                    <li><a href="/Mis/Ke/DaiKeManage.aspx"><i class="fa  fa-reorder "></i>代课管理</a></li>
+                    <li><a href="/User/Exam/ClassManage.aspx"><i class="fa fa-anchor"></i>班级管理</a></li>
+                    <li><a href="/User/Questions/ClassView.aspx"><i class="fa fa-flag"></i>班级列表</a></li>
+                    <li><a href="/Mis/Ke/ConfigList.aspx"><i class="fa fa-cog"></i>排课配置</a></li>
+                    <%--<li><a href="/Mis/Ke/ExTeacherManage.aspx"><i class="fa  fa-female"></i>教师管理</a></li>--%>
+			        <li><a href="/Mis/Ke/AutoPk.aspx"><i class="fa fa-retweet"></i>自动排课</a></li>
+                    <li><a href="/Mis/Ke/PkList.aspx"><i class="fa fa-search"></i>排课查询</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_zone"><!--社区互动-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-globe"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/UserZone/Structure.aspx"><i class="glyphicon glyphicon-globe"></i>企业结构</a></li>
+			        <li><a href="/User/UserZone/Default.aspx"><i class="fa fa-home"></i>我的空间</a></li>
+			        <li><a href="/User/UserZone/UserQuestFriend.aspx"><i class="fa fa-users"></i>社区交友</a></li>
+			        <li><a href="/User/Survey/SurveyAll.aspx"><i class="fa fa-wechat"></i>问卷投票</a></li>
+			        <li><a href="/User/Magazine/AddMagazine.aspx"><i class="fa  fa-star-half-full"></i>电子杂志</a></li>
+			        <li><a href="/index" target="_blank"><i class="fa  fa-paw"></i>社区贴吧</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_TalkLog">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-wechat"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <div class="user_ban_item"><a href="/User/Usertalk/TalkLog.aspx"><i class="fa fa-wechat"></i>聊天记录</a></div>
+            </div>
+        </div>  
+        <div class="u_user" id="u_zone1"><!--助写平台-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="glyphicon glyphicon-globe"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/Edit/Default.aspx?ID=0"><i class="fa fa-pencil"></i>写作助理</a></li>
+			        <li><a href="/Edit/EditList.aspx"><i class="fa fa-align-left"></i>作品列表</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="u_user" id="u_group"><!--我的聚合-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-users"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled"> 
+			        <li><a href="/Space/SpaceManage.aspx"><i class="fa fa-user"></i>我的聚合</a></li>
+			        <li><a href="/Space/Default.aspx?id=1"><i class="fa fa-home"></i>聚合首页</a></li>
+			        <li><a href="/Space/list.aspx?id=1"><i class="fa fa-list-alt"></i>聚合列表</a></li>
+			        <li><a href="/Space/About.aspx?id=1"><i class="fa fa-file-text-o"></i>聚合内容</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_fav"><!--用户收藏-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-users"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Content/MyFavori.aspx?type=1"><i class="fa fa-sign-out"></i>内容收藏</a></li>
+			        <li><a href="/User/Content/MyFavite_Shop.aspx?type=2"><i class="fa fa-heart"></i>商品收藏</a></li>
+			        <li><a href="/User/Content/MyFavite_UserShop.aspx?type=3"><i class="fa fa-home"></i>网店收藏</a></li>
+                    <li><a href="/User/Content/MyFavori.aspx?type=4"><i class="fa fa-question"></i>问题收藏</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="u_user" id="u_page"><!--黄页站群-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-users"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="list-unstyled">
+                    <li><a href="/User/Pages/Default.aspx"><i class="fa fa-leaf"></i>企业黄页</a></li>
+			        <li><a href="/User/Pages/Modifyinfo.aspx"><i class="fa fa-cog"></i>配置黄页</a></li>
+			        <li><a href="/User/Pages/ClassManage.aspx"><i class="fa  fa-align-justify"></i>栏目管理</a></li> 
+			        <li><a href="/User/Pages/PageInfo.aspx?menu=modifile"><i class="fa fa-info-circle"></i>黄页信息</a></li>
+			        <li><a href="/User/Info/Certificate.aspx"><i class="fa fa-file-o"></i>公司证书</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="u_user" id="u_cloud"><!--云端存储-->
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                <i class="fa fa-cloud"></i> 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                <ul class="sub_ban list-unstyled">
+                    <li><a href="/User/CloudManage.aspx?Type=file"><i class="fa fa-folder-open"></i>我的文档</a></li>
+			        <li><a href="/User/CloudManage.aspx?Type=photo"><i class="fa fa-photo"></i>我的相册</a></li>
+			        <li><a href="/User/CloudManage.aspx?Type=music"><i class="fa fa-music"></i>我的音乐</a></li>
+			        <li><a href="/User/CloudManage.aspx?Type=video"><i class="fa fa-film"></i>我的视频</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="u_user" id="u_file"><!--文件工厂-->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 u_ban_l text-center hidden-xs">
+                    <i class="fa fa-users"></i> 
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 u_ban_r">
+                    <ul class="list-unstyled">
+                        <li><a href="/User/FileFactory/ContentManage.aspx"><i class="fa fa-folder-open"></i>文件工厂</a></li>
+			            <li><a href="/User/FileFactory/Doc.aspx"><i class="fa fa-navicon"></i>模板设置</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="u_main_content"><asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder></div>
+<div class="u_footer text-center navbar-fixed-bottom">
+    <div class="footer_border hidden-xs">
+    </div>
+    <%=ZoomLa.Components.SiteConfig.SiteInfo.Copyright %>
+    </div>
+<asp:ContentPlaceHolder runat="server" ID="ScriptContent"></asp:ContentPlaceHolder>
+</form>
+</body>
+</html>
+<script>
+    $().ready(function (e) {
+        var curban = $("#pageflag").attr("data-ban");
+        var curnav = $("#pageflag").attr("data-nav");
+        $("#bs-example-navbar-collapse-1 li").removeClass("active");
+        $("#u_" + curban).addClass("active");
+        $("#nav_" + curnav).addClass("active");
+        if (curnav == "edu") {
+            $(".u_left_menu").show();
+        } 
+        $(".user_leftd li a.u_left_head").click(function (e) {
+            if ($(this).parent().find(".user_l_ulin").css("display") == "none")
+                $(this).parent().find(".user_l_ulin").slideDown();
+            else
+                $(this).parent().find(".user_l_ulin").slideUp();
+            window.localStorage.User_Default_left = $(this).parent().attr("id"); 
+        })
+    });  
+    $("#mimenu_btn").click(function (e) {
+        if ($(".user_mimenu_left").width() > 0) {
+            $(".user_mimenu_left ul").fadeOut(100);
+            $(".user_mimenu_left").animate({ width: 0 }, 200);
+        }
+        else {
+            $(".user_mimenu_left").animate({ width: 150 }, 300);
+            $(".user_mimenu_left ul").fadeIn();
+        }
+    }); 
+    //会员搜索
+    $("#sub_btn").click(function (e) {
+        if ($("#key").val() == "")
+            alert("搜索关键字为空!");
+        else
+            window.location = "/User/SearchResult.aspx?key=" + escape($("#key").val());
+    });
+    //搜索回车事件
+    function IsEnter(obj) {
+        if (event.keyCode == 13) {
+            $("#sub_btn").click(); return false;
+        }
+    }
+    $(".u_left_control").click(function (e) {
+        if ($(".u_left_menu").width() > 0) { 
+            $(".u_left_menu").animate({ width: 0 }, 200);
+        }
+        else {
+            $(".u_left_menu").animate({ width: 200 }, 300); 
+        }
+    }) 
+</script>

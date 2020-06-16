@@ -1,0 +1,133 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<style>
+.news_event .tab-pane .news_event_ba{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/} { background:#000; box-shadow:0px 0px 5px 2px #00ff64;}
+.news_event_m_con { text-align:justify; text-justify:inter-ideograph; overflow:hidden; line-height:28px;}
+.news_event_r .tab-content .tab-pane { padding-top:5px;}
+.list_img1 { background:url(/Template/DyanSO/style/images/pic30.jpg) center no-repeat; background-size:cover;}
+</style>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="list_img1"  style="position:relative;">
+<div class="container">
+<div class="list_img_c pull-right">
+<a href="/">中文</a>
+</div>
+</div>
+<div id="breadcrumb" style="height:1px; position:absolute; bottom:0; width:100%; padding-top:118px;"></div>
+</div>
+<div class="wap_breadcrumb">
+<span></span>
+<div class="container padding0">
+<ol class="breadcrumb">
+<li><a href="{ZL:GetNodeLinkUrl(19)/}">Dynaso</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(6)/}">News & Event</a></li>
+<li class="active">{ZL:CutText({SField sid="文章模型数据源标签" FD="Title" page="0"/},30,...)/}</li>
+</ol>
+</div>
+</div> 
+<div class="container">
+<div class="news_event">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding0 news_event_l">
+<img src="{ZL:GetPicUrl({SField sid="文章模型数据源标签" FD="pic" page="0"/})/}" alt="{SField sid="文章模型数据源标签" FD="Title" page="0"/}" class="img-responsive"/>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding0 news_event_r">
+<div class="bs-docs-section">
+<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+<ul id="myTab" class="nav nav-tabs hidden" role="tablist">
+<li class="active news_event_ac" ><a href="{ZL:GetNodeLinkUrl(17)/}" id="home-tab">News</a></li>
+<li class="news_event_ac1"><a href="{ZL:GetNodeLinkUrl(16)/}">Event</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledBy="home-tab">
+<ul class="list-unstyled" id="items" style="height: 100px;overflow: hidden">
+{ZL.Label id="输出文章列表_标题时间" NodeID="17" ShowNum="6" TitleNum="80" /}
+</ul>
+<div class="news_event_tb">
+<a href="javascript: void(0);" onclick="document.getElementById('items').scrollTop += 40;"></a>
+</div>
+</div>
+<div class="clearfix"></div>
+<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledBy="profile-tab">
+<ul class="list-unstyled" id="itemss" style="height: 100px;overflow: hidden">
+{ZL.Label id="输出文章列表_标题时间新样式" NodeID="16" ShowNum="6" TitleNum="80" /}
+</ul>
+<div class="news_event_tb">
+<a href="{ZL:GetNodeLinkUrl(6)/}">More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+ 
+<div class="container  news_event_m">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+<div class="row">
+<div class="col-xs-12 news_event_m_l">
+<div class="news_event_m_con">
+{SField sid="文章模型数据源标签" FD="content" page="0"/}
+</div>
+</div>
+</div>	
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+$().ready(function(e) {
+    var mz='{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}'
+	if(mz==16){
+	$(".news_event_ac1").addClass("active");
+	$(".news_event_ac").removeClass("active");
+	$("#profile").addClass("in active");
+	$("#home").removeClass("in active");
+	}
+	if(mz==17){
+	$(".news_event_ac").addClass("active");
+	$(".news_event_ac1").removeClass("active");
+	}
+});
+$().ready(function(e) {
+    if($(this).find(".news_event_m_r img").attr("src")=="/UploadFiles/nopic.gif"){
+	$(".news_event_m_r").hide();
+	$(".news_event_m_l").removeClass("col-lg-7 col-md-7 col-sm-7");
+	}
+});
+
+
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

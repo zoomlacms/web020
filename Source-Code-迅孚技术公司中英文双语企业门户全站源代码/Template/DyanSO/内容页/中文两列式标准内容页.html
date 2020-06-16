@@ -1,0 +1,113 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{ZL.Label id="中文网站标题"/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<style>
+.wap_breadcrumb .container{padding-left:15px;}
+</style>
+</head>
+<body>
+{ZL.Label id="中文版全站头部"/}
+<div class="wap_breadcrumb">
+<div class="container">
+<div class="wap_breadcrumb_ba">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 padding0">
+<ol class="breadcrumb">
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ol>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding0 breadcrumb_r">
+<a class="home_banner_c2" href="/">ENGLISH</a>
+</div>
+</div>
+</div>
+</div> 
+<div class="container">
+<div class="list_m">
+<div class="row">
+<div class="col-lg-9  col-md-9 col-sm-9 col-xs-12">
+<div class="wap_left">
+<h4>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h4>
+<div class="wap_left_con">{SField sid="文章模型数据源标签" FD="content" page="0"/}</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="wap_right">
+<div class="wap_contact_ba">
+<div class="wap_contact">
+<h1>选择如何联系我们</h1>
+<div>
+<p><a href="tel:8888 8888" class="all_phone">8888 8888</a></p>
+<p><a href="mailto:join_us@dynaso.com.cn">join_us@dynaso.com.cn </a></p>
+</div>
+</div>
+</div>
+{ZL.Label id="中文分享"/}
+</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="中文版全站底部"/}
+</div>
+</body>
+</html>
+<script>
+
+$().ready(function(e) {
+	if(IsPC())
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打8888 8888')");
+
+});
+
+
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+$().ready(function(e) {
+    $(".breadcrumb li:nth-child(1) a").text("首页");
+});
+
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

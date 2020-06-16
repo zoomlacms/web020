@@ -1,0 +1,554 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>Dynaso_Home</title>
+<meta name="Keywords" content="Dynaso,汽车策划,北京Dynaso">
+<meta name="Description" content="Dynaso上海迅孚是专业从事汽车管理咨询行业的团队">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.0.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="/Template/DyanSO/style/font.css" rel="stylesheet"/>
+<link href="/Template/DyanSO/style/global.css" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js?v=47" charset="utf-8"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top nav_adjust">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/"><img src="/Template/DyanSO/style/images/logo.png" class="img-responsive img_adjust" alt="Dynaso"/></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="/Item/1.aspx" class="home_nav_a">ABOUT US</a>
+<ul class="subnav list-unstyled" style="width:120px;">
+<li><a href="/Item/1.aspx">Introduction</a></li>
+<li><a href="/Item/2.aspx#breadcrumb">Our Value</a></li>
+<li><a href="/Item/3.aspx#breadcrumb">Our Vision</a></li>
+</ul>
+</li>
+<li><a href="/Class_10/Default.aspx" class="home_nav_a">MARKET INTELLIGENCE</a>
+<ul class="subnav list-unstyled" style="width:220px;">
+<li><a href="/Class_10/Default.aspx#market_sub1">Regulations & Homologation</a></li>
+<li><a href="/Class_10/Default.aspx#market_sub2">Marketing Research</a></li>
+<li><a href="/Class_10/Default.aspx#market_sub3">Marketing Data Products</a></li>
+</ul>
+</li>
+<li><a href="/Class_37/Default.aspx" class="home_nav_a">CONSULTANCY</a>
+<ul class="subnav list-unstyled"  style="width:260px;">
+<li><a href="/Class_37/Default.aspx#market_sub1">Enter China Market</a></li>
+<li><a href="/Class_37/Default.aspx#market_sub2">Go To Global Market</a></li>
+<li><a href="/Class_37/Default.aspx#market_sub3">Sales & Service</a></li>
+<li><a href="/Class_37/Default.aspx#market_sub4">People Development & Coaching</a></li>
+<li><a href="/Class_37/Default.aspx#market_sub5">Parts Supply Chain Management</a></li>
+</ul>
+</li>
+<li><a href="/Class_3/Default.aspx" class="home_nav_a">OUTSOURCING</a>
+<ul class="subnav list-unstyled"  style="width:220px;">
+<li><a href="/Class_3/Default.aspx#market_sub1">Homologation Agent Service</a></li>
+<li><a href="/Class_3/Default.aspx#market_sub2">Project Management Service</a></li>
+<li><a href="/Class_3/Default.aspx#market_sub3">Warranty Claims Processing</a></li>
+<li><a href="/Class_3/Default.aspx#market_sub4">Dealer Audits</a></li>
+</ul>
+</li>
+<li><a href="/Class_5/Default.aspx" class="home_nav_a">CLIENT & PARTNER</a></li>
+<li><a href="/Item/104.aspx#breadcrumb" class="home_nav_a">NEWS & EVENT</a></li>
+<li><a href="/Class_40/Default.aspx#breadcrumb" class="home_nav_a">JOIN US</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="home_banner">
+<div class="container-fluid padding0">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="/Template/DyanSO/style/images/pic_img1.jpg" class="img-responsive" alt="Dynaso 10th Anniversary Celebration Party" />
+<div class="carousel-caption">
+<div>
+<h2><a href="/Item/297.aspx" target="_blank" title="Dynaso 10th Anniversary Celebration Party">Dynaso 10th Anniversary Celebration Party</a><div class="clearfix"></div></h2>
+<div class=" home_banner_div">
+<p class="text-left">Theme: Growing With Gratitude· <br>Be Innovation for Reaching Higher</p>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="/Template/DyanSO/style/images/pic1.jpg" class="img-responsive" alt="We make the market closer to you!" />
+<div class="carousel-caption">
+<div>
+<h2><a href="/Class_10/Default.aspx" target="_blank" title="We make the market closer to you!">We make the market closer to you!</a><div class="clearfix"></div></h2>
+<div class="home_banner_div home_banner_ys">
+<p class="text-left">Regulation& Homologation / Marketing <br>Research / Marketing Data Products</p>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="/Template/DyanSO/style/images/pic27.jpg" class="img-responsive" alt="Serving clients serving staff, be a reliable partner" />
+<div class="carousel-caption">
+<div>
+<h2><a href="/Class_37/Default.aspx" target="_blank" title="">Help clients create value-added services to local business</a><div class="clearfix"></div></h2>
+<div class=" home_banner_div home_banner_ys2" style="width:400px; background-size:cover;">
+<p class="text-left" style="padding-bottom:5px;">Enter China Market/Go to Global Market/Sales & Service/People Development & Coaching/Parts Supply Chain Management</p>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="/Template/DyanSO/style/images/pic2.jpg" class="img-responsive" alt="Help clients create value-added services to local business" />
+<div class="carousel-caption">
+<div>
+<h2><a href="/Class_3/Default.aspx" target="_blank" title="Building successful clients and employees, be a trusted partner">Building successful clients and employees, be a trusted partner</a><div class="clearfix"></div></h2>
+<div class="home_banner_div home_banner_ys1">
+<p class="text-left">Homologation Agent Service / Project <br>Management Service / Warranty Claims <br>Processing / Dealer Audits</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="home_banner_c">
+<div class="container">
+<a class="home_banner_c1" href="/Class_19/Default.aspx">中文</a>
+</div>
+</div>
+<div class="home_banner_d">
+<a href="#our_service"><p>MORE INFORMATION</p></a>
+</div>
+</div>
+</div>
+</div>
+<div  id="our_service"></div>
+<div class="title_1">
+<p class="text-center title_p1">OUR SERVICE</p>
+</div> 
+<div class="section">
+<div id="home_roll">
+<div class="container-fluid padding0">
+<div class="home_roll">
+<div class="rollBox">
+<div class="LeftBotton"><img src="/Template/DyanSO/style/images/trangle_left_icon.png"  alt=""  onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"  style="display:none" id="d2" /></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Cont" id="ISL_Cont">
+<div class="ScrCont">
+<div id="List1"> 
+<div class="pic">
+<a title="Regulations & Homologation" href="/Class_10/Default.aspx#market_sub1"><img class="img-responsive" alt="Regultions Homologation" src="/UploadFiles/saless/jpg/2015/8/201508051728084303.jpg"></a>
+<h3><a title="Regulations & Homologation" href="/Class_10/Default.aspx#market_sub1">Regulations & Homologation</a></h3>
+</div>
+
+<div class="pic">
+<a title="Marketing Research" href="/Class_10/Default.aspx#market_sub2"><img class="img-responsive" alt="Marketing Research" src="/UploadFiles/saless/jpg/2015/8/201508051733354520.jpg"></a>
+<h3><a title="Marketing Research" href="/Class_10/Default.aspx#market_sub2">Marketing Research</a></h3>
+</div>
+
+<div class="pic">
+<a title="Data Products" href="/Class_10/Default.aspx#market_sub3"><img class="img-responsive" alt="Data Products" src="/UploadFiles/saless/jpg/2015/8/201508051735030310.jpg"></a>
+<h3><a title="Data Products" href="/Class_10/Default.aspx#market_sub3">Data Products</a></h3>
+</div>
+
+<div class="pic">
+<a title="Enter China Market" href="/Class_37/Default.aspx#market_sub1"><img class="img-responsive" alt="Enter China Market" src="/UploadFiles/saless/jpg/2015/8/201508051736118435.jpg"></a>
+<h3><a title="/Class_37/Default.aspx#market_sub1">Enter China Market</a></h3>
+</div>
+
+<div class="pic">
+<a title="Go to Global Market" href="/Class_37/Default.aspx#market_sub2"><img class="img-responsive" alt="Go to Global Market" src="/UploadFiles/saless/jpg/2015/8/201508051737049866.jpg"></a>
+<h3><a title="Go to Global Market" href="/Class_37/Default.aspx#market_sub2">Go to Global Market</a></h3>
+</div>
+
+<div class="pic">
+<a title="Sales &amp; Service" href="/Class_37/Default.aspx#market_sub3"><img class="img-responsive" alt="Sales &amp; Service" src="/UploadFiles/saless/jpg/2015/8/201508051737451964.jpg"></a>
+<h3><a title="Sales &amp; Service" href="/Class_37/Default.aspx#market_sub3">Sales &amp; Service</a></h3>
+</div>
+
+<div class="pic">
+<a title="People Development &amp; Coaching" href="/Class_37/Default.aspx#market_sub4"><img class="img-responsive" alt="People Development &amp; Coaching" src="/UploadFiles/ourservice/jpg/2015/8/201508211558390846.jpg"></a>
+<h3><a title="People Development &amp; Coaching" href="/Class_37/Default.aspx#market_sub4">People Development &amp; Coaching</a></h3>
+</div>
+
+<div class="pic">
+<a title="Parts Supply Chain Management" href="/Class_37/Default.aspx#market_sub5"><img class="img-responsive" alt="Parts Supply Chain Management" src="/UploadFiles/saless/jpg/2015/8/201508051739230004.jpg"></a>
+<h3><a title="Parts Supply Chain Management" href="/Class_37/Default.aspx#market_sub5">Parts Supply Chain Management</a></h3>
+</div>
+
+<div class="pic">
+<a title="Homologation Agent Service" href="/Class_3/Default.aspx#market_sub1"><img class="img-responsive" alt="Homologation Agent Service" src="/UploadFiles/saless/jpg/2015/8/201508051741482924.jpg"></a>
+<h3><a title="Homologation Agent Service" href="/Class_3/Default.aspx#market_sub1">Homologation Agent Service</a></h3>
+</div>
+
+<div class="pic">
+<a title="Project Management Service" href="/Class_3/Default.aspx#market_sub2"><img class="img-responsive" alt="Project Management Service" src="/UploadFiles/ourservice/jpg/2015/8/201508211600521364.jpg"></a>
+<h3><a title="Project Management Service" href="/Class_3/Default.aspx#market_sub2">Project Management Service</a></h3>
+</div>
+
+<div class="pic">
+<a title="Warranty Claims Processing" href="/Class_3/Default.aspx#market_sub3"><img class="img-responsive" alt="Warranty Claims Processing" src="/UploadFiles/saless/jpg/2015/8/201508051744434658.jpg"></a>
+<h3><a title="Warranty Claims Processing" href="/Class_3/Default.aspx#market_sub3">Warranty Claims Processing</a></h3>
+</div>
+
+<div class="pic">
+<a title="Dealer Audits" href="/Class_3/Default.aspx#market_sub4"><img class="img-responsive" alt="Dealer Audits" src="/UploadFiles/ourservice/jpg/2015/8/201508211601454886.jpg"></a>
+<h3><a title="Dealer Audits" href="/Class_3/Default.aspx#market_sub4">Dealer Audits</a></h3>
+</div> 
+<!--
+<div class="pic">
+<a href="/Item/94.aspx" title="Regultions Homologation"><img src="/UploadFiles/saless/jpg/2015/8/201508051728084303.jpg" alt="Regultions Homologation"  class="img-responsive"/></a>
+<h3><a href="/Item/94.aspx" title="Regultions Homologation">Regultions Homologation</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/93.aspx" title="Marketing Research"><img src="/UploadFiles/saless/jpg/2015/8/201508051733354520.jpg" alt="Marketing Research"  class="img-responsive"/></a>
+<h3><a href="/Item/93.aspx" title="Marketing Research">Marketing Research</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/92.aspx" title="Data Products"><img src="/UploadFiles/saless/jpg/2015/8/201508051735030310.jpg" alt="Data Products"  class="img-responsive"/></a>
+<h3><a href="/Item/92.aspx" title="Data Products">Data Products</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/91.aspx" title="Enter China Market"><img src="/UploadFiles/saless/jpg/2015/8/201508051736118435.jpg" alt="Enter China Market"  class="img-responsive"/></a>
+<h3><a href="/Item/91.aspx" title="Enter China Market">Enter China Market</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/90.aspx" title="Go to Global Market"><img src="/UploadFiles/saless/jpg/2015/8/201508051737049866.jpg" alt="Go to Global Market"  class="img-responsive"/></a>
+<h3><a href="/Item/90.aspx" title="Go to Global Market">Go to Global Market</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/89.aspx" title="Sales & Service"><img src="/UploadFiles/saless/jpg/2015/8/201508051737451964.jpg" alt="Sales & Service"  class="img-responsive"/></a>
+<h3><a href="/Item/89.aspx" title="Sales & Service">Sales & Service</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/88.aspx" title="People Development & Coaching"><img src="/UploadFiles/ourservice/jpg/2015/8/201508211558390846.jpg" alt="People Development & Coaching"  class="img-responsive"/></a>
+<h3><a href="/Item/88.aspx" title="People Development & Coaching">People Development & Coaching</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/87.aspx" title="Parts Supply Chain Management"><img src="/UploadFiles/saless/jpg/2015/8/201508051739230004.jpg" alt="Parts Supply Chain Management"  class="img-responsive"/></a>
+<h3><a href="/Item/87.aspx" title="Parts Supply Chain Management">Parts Supply Chain Management</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/86.aspx" title="Homologation Agent Service"><img src="/UploadFiles/saless/jpg/2015/8/201508051741482924.jpg" alt="Homologation Agent Service"  class="img-responsive"/></a>
+<h3><a href="/Item/86.aspx" title="Homologation Agent Service">Homologation Agent Service</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/85.aspx" title="Project Management Service"><img src="/UploadFiles/ourservice/jpg/2015/8/201508211600521364.jpg" alt="Project Management Service"  class="img-responsive"/></a>
+<h3><a href="/Item/85.aspx" title="Project Management Service">Project Management Service</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/225.aspx" title="Warranty Claims Processing"><img src="/UploadFiles/saless/jpg/2015/8/201508051744434658.jpg" alt="Warranty Claims Processing"  class="img-responsive"/></a>
+<h3><a href="/Item/225.aspx" title="Warranty Claims Processing">Warranty Claims Processing</a></h3>
+</div>
+
+<div class="pic">
+<a href="/Item/224.aspx" title="Dealer Audits"><img src="/UploadFiles/ourservice/jpg/2015/8/201508211601454886.jpg" alt="Dealer Audits"  class="img-responsive"/></a>
+<h3><a href="/Item/224.aspx" title="Dealer Audits">Dealer Audits</a></h3>
+</div>
+-->
+</div>
+<div id="List2"></div>
+</div>
+</div>
+<div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" ><img src="/Template/DyanSO/style/images/service_right_icon.png"  alt=""   onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" class=" pull-right" id="d3"  style="display:none" /></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="title_2">
+<p class="text-center title_p2">GLOBAL FOOTPRINTS</p>
+</div>
+
+<div class="world_map">
+<div class="container">
+<img src="/Template/DyanSO/style/images/world_map.jpg" class="img-responsive" usemap="#world_map"/>
+<map name="world_map">
+<area href="#" shape="rect" coords="246,160,120,250"></area>
+<area href="#" shape="rect" coords="338,350,446,420"></area>
+<area href="#" shape="rect" coords="530,110,560,140"></area>
+<area href="#" shape="rect" coords="590,370,650,410"></area>
+<area href="#" shape="rect" coords="750,80,850,110"></area>
+<area href="#" shape="rect" coords="840,150,900,180"></area>
+<area href="#" shape="rect" coords="760,190,860,210"></area>
+<area href="#" shape="rect" coords="880,200,940,220"></area>
+<area href="#" shape="rect" coords="750,250,860,280"></area>
+</map>
+</div>
+</div>
+<!--底部-->
+<div class="foot">
+<div class="container">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10">
+<div class="wap_f_div1">
+<a href="/"><img src="/Template/DyanSO/style/images/foot_icon.png" class="img-responsive" alt=""/></a>
+<p>Copyright 2011-2015 Dynaso.com.cn.
+Dynaso Technical Consulting Co., Ltd All rights reserved.
+ICP: 京ICP备09049616号-1</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 foot_o">
+<ul class="list-unstyled">
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<p class="f_div2_title">Beijing Office</p>
+<p class="f_div2_text">Add: Unit 1708, East Ocean Centre,<br>A-24 Jianguomen Outer, Avenue,<br>Chaoyang District, Beijing, 100004<br>Tel: (86 10) 6015 6013 / 6017 / 6023<br>E-mail: service@dynaso.com.cn</p>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<p class="f_div2_title">Shanghai Office</p>
+<p class="f_div2_text">Add: Unit 505, International Automobile<br>City Tower, No. 888 South Moyu Road,<br>Anting Town, Shanghai, 201805<br>Tel: (86 21) 5953 3389 / 3382<br>E-mail: shanghai@dynaso.com.cn</p>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<p class="f_div2_title">Singapore Office</p>
+<p class="f_div2_text">Add: 420 North Bridge Road, # 05-03<br>North Bridge Centre, Singapore, 188727<br>E-mail: singapore@dynaso.com.cn</p>
+</li>
+<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10">
+<p class="f_div2_title">Melbourne Office</p>
+<p class="f_div2_text">Add: P.O. Box 546 Berwick, 3806<br>Melbourne, Australia<br>E-mail: melbourne@dynaso.com.cn</p>
+</li>
+</ul>
+<div class="clearfix"></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding0">
+<div class="wap_f_div4">
+<ul class="list-unstyled">
+<li><a href="/Item/1.aspx">ABOUT US</a></li>
+<li><a href="/Class_10/Default.aspx">MARKET INTELLIGENCE</a></li>
+<li><a href="/Class_37/Default.aspx">CONSULTANCY</a></li>
+<li><a href="/Class_3/Default.aspx">OUTSOURCING</a></li>
+<li><a href="/Class_5/Default.aspx">CLIENT & PARTNER</a></li>
+<li><a href="/Item/104.aspx">NEWS & EVENT</a></li>
+<li><a href="/Class_40/Default.aspx">JOIN US</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--版权信息-->
+<div class="navbar-fixed-bottom copyright_info">
+<div class="container">
+<div class="copyright_info_l">
+<a href="http://www.linkedin.com/company/dynaso-technical-consulting-co-ltd?trk=biz-companies-cym" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('1');" ><i class="fa fa-weixin"></i></a>
+<a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('2');"><i class="fa fa-play-circle fa-spin"></i></a>
+<a href="/Class_45/Default.aspx" class="copyright_info_ld">Report Download</a>
+</div>
+<div class="pull-right copyright_info_r">
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-offset-2">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">Dynaso Official WeChat: Auto New Market</h4>
+</div>
+<div class="modal-body"> 
+<img src="/Template/DyanSO/style/images/erweima.jpg" class="center-block img-responsive" alt="Dynaso Official WeChat: Auto New Market" />
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">DynaSo Company Vedio</h4>
+</div>
+<div class="modal-body"> 
+<div id="myModah3"></div>
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div> 
+</body>
+</html>
+<script>
+//左右滚动效果
+var Speed = 3; //速度(毫秒)
+var Space = 7; //每次移动(px)
+var PageWidth = 400; //翻页宽度
+var fill = 0; //整体移位
+var MoveLock = false;
+var MoveTimeObj;
+var Comp = 0;
+var AutoPlayObj = null;
+GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+GetObj('ISL_Cont').scrollLeft = fill;
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);}
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();}
+AutoPlay();
+function GetObj(objName)
+{
+if(document.getElementById)
+return eval('document.getElementById("'+objName+'")')
+else
+return eval('document.all.'+objName)
+}
+function AutoPlay()
+{//自动滚动
+clearInterval(AutoPlayObj);
+AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',3000); //间隔时间
+}
+function ISL_GoUp()
+{ //上翻开始
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+MoveTimeObj = setInterval('ISL_ScrUp();',Speed);
+}
+function ISL_StopUp()
+{ //上翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0)
+{
+Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+CompScr();
+}
+else
+MoveLock = false;
+AutoPlay();
+}
+function ISL_ScrUp()
+{ //上翻动作
+if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth}
+GetObj('ISL_Cont').scrollLeft -= Space ;
+}
+function ISL_GoDown(){ //下翻
+clearInterval(MoveTimeObj);
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+ISL_ScrDown();
+MoveTimeObj = setInterval('ISL_ScrDown()',Speed);
+}
+function ISL_StopDown(){ //下翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 )
+{
+Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+CompScr();
+}
+else{MoveLock = false;}
+AutoPlay();
+}
+function ISL_ScrDown()
+{ //下翻动作
+if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;}
+GetObj('ISL_Cont').scrollLeft += Space ;
+}
+function CompScr()
+{
+var num;
+if(Comp == 0){MoveLock = false;return;}
+if(Comp < 0)
+{ //上翻
+if(Comp < -Space)
+{
+Comp += Space;
+num = Space;
+}
+else
+{
+num = -Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft -= num;
+setTimeout('CompScr()',Speed);
+}
+else
+{ //下翻
+if(Comp > Space)
+{
+Comp -= Space;
+num = Space;
+}
+else
+{
+num = Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft += num;
+setTimeout('CompScr()',Speed);
+}
+}
+
+//触控效果
+window.onload=function(){
+var home_roll=document.getElementById("home_roll");
+var d2=document.getElementById("d2");
+var d3=document.getElementById("d3");
+home_roll.onmouseover=function(){
+d2.style.display="block";
+d3.style.display="block";
+}
+home_roll.onmouseout=function(){
+d2.style.display="none";
+d3.style.display="none";
+}
+}
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+ 
+function showdiag(n){
+	if(n==1)
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function(e){
+			$("#myModal").modal('show'); 
+		}) 
+	else
+		$("#myModah3").load("/Class_35/NodePage.aspx",function(e){
+			$("#myModal1").modal('show'); 
+		})  
+} 
+$(".close").click(function(e) {
+    $("#myModah3").html("");
+});
+</script>

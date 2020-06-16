@@ -1,0 +1,73 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{ZL.Label id="中文网站标题"/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+</script>
+<style>
+.wap_breadcrumb .container{padding-left:15px;}
+</style>
+</head>
+<body>
+{ZL.Label id="中文版全站头部"/}
+<div class="pic_title_div">
+<div class="container">
+<p>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</p>
+</div>
+</div>
+<div class="wap_breadcrumb" style="margin-bottom:20px;">
+<div class="container">
+<div class="wap_breadcrumb_ba">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<ol class="breadcrumb">
+<li><a href="{ZL:GetNodeLinkUrl(19)/}">首页</a></li>
+<li class="active">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</li>
+</ol>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 breadcrumb_r">
+<a href="/">中文</a>
+<a href="{ZL:GetNodeLinkUrl(19)/}">ENGLISH</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="ul_div">
+<div class="row">
+{ZL.Label id="输出文章列表_标题简介_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="9" TitleNum="40" SynNum="180" /}
+</div>
+</div>
+</div>
+{ZL.Label id="中文版全站底部"/}
+</div>
+</body>
+</html>
+<script>
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

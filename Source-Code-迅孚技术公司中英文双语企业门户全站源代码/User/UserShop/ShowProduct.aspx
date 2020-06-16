@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="User_UserShop_ShowProduct, App_Web_nwraas5q" enableEventValidation="false" viewStateEncryptionMode="Never" %>

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{ZL.Label id="中文网站标题"/}_首页</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css" rel="stylesheet"/>
+<script src="{$CssDir/}js/NSW_Index.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top nav_adjust nav_adjust1">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="{ZL:GetNodeLinkUrl(19)/}"><img src="{$LogoUrl/}" class="img-responsive img_adjust" alt="{$SiteName/}"/></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="{ZL:GetInfoUrl(129)/}" class="home_nav_a">关于我们</a>
+<ul class="subnav list-unstyled" style="width:120px;">
+<li><a href="{ZL:GetInfoUrl(129)/}">企业介绍</a></li>
+<li><a href="{ZL:GetInfoUrl(130)/}#breadcrumb">我们的价值</a></li>
+<li><a href="{ZL:GetInfoUrl(131)/}#breadcrumb">我们的愿景</a></li>
+</ul
+></li>
+<li><a href="{ZL:GetNodeListUrl(20)/}" class="home_nav_a">市场情报</a>
+<ul class="subnav list-unstyled" style="width:120px;">
+<li><a href="{ZL:GetNodeListUrl(20)/}#market_sub1">法规与认证</a></li>
+<li><a href="{ZL:GetNodeListUrl(20)/}#market_sub2">市场研究</a></li>
+<li><a href="{ZL:GetNodeListUrl(20)/}#market_sub3">数据产品</a></li>
+</ul>
+</li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}" class="home_nav_a">商业咨询</a>
+<ul class="subnav list-unstyled" style="width:120px;">
+<li><a href="{ZL:GetNodeLinkUrl(41)/}#market_sub1">进入中国市场</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}#market_sub2">国际市场准入</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}#market_sub3">销售与服务</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}#market_sub4">人员发展与辅导</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}#market_sub5">供应链管理</a></li>
+</ul>
+</li>
+<li><a href="{ZL:GetNodeLinkUrl(26)/}" class="home_nav_a">外包服务</a>
+<ul class="subnav list-unstyled" style="width:140px;">
+<li><a href="{ZL:GetNodeLinkUrl(26)/}#market_sub1">认证代理服务</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(26)/}#market_sub2">项目管理服务</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(26)/}#market_sub3">质量担保索赔处理</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(26)/}#market_sub4">经销商网点审计</a></li>
+</ul>
+</li>
+<li><a href="{ZL:GetNodeLinkUrl(29)/}" class="home_nav_a">客户及合作伙伴</a></li>
+<li><a href="{ZL:GetInfoUrl(305)/}#breadcrumb" class="home_nav_a">新闻与活动</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(43)/}" class="home_nav_a">加入我们</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="home_banner home_banner1">
+<div class="container-fluid padding0">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="{$CssDir/}images/pic_img1.jpg" class="img-responsive" alt=""/>
+<div class="carousel-caption">
+<div>
+<h2><a href="/uploadfiles/y10.jpg" target="_blank">迅孚公司十周年庆祝活动</a></h2>
+<div class="home_banner_div home_banner_h" style="background-position:0 5px;">
+<p class="text-left">主题：感恩成长•变革超越</p>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="{$CssDir/}images/pic1.jpg" class="img-responsive" alt=""/>
+<div class="carousel-caption">
+<div>
+<h2><a href="{ZL:GetNodeListUrl(20)/}#market_sub1">我们让市场更接近你！</a></h2>
+<div class="home_banner_div home_banner_h" style="background-position:0 30px; ">
+<p class="text-left">法规和认证/市场研究/数据产品</p>
+<span><a href="{ZL:GetNodeListUrl(20)/}#market_sub1">>>更多</a></span>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="{$CssDir/}images/pic27.jpg" class="img-responsive" alt=""/>
+<div class="carousel-caption">
+<div>
+<h2><a href="{ZL:GetNodeLinkUrl(41)/}">帮助客户增值本地化业务</a></h2>
+<div class="home_banner_div" style="background-position:0 30px;">
+<p class="text-left">进入中国市场/进入国际市场/<br>销售与服务/人员发展与辅导/<br>供应链管理</p>
+<span><a href="{ZL:GetNodeLinkUrl(41)/}">>>更多</a></span>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="{$CssDir/}images/pic2.jpg" class="img-responsive" alt=""/>
+<div class="carousel-caption">
+<div>
+<h2><a href="{ZL:GetNodeLinkUrl(43)/}">建立成功的客户和员工，成为一个值得信赖的合作伙伴</a></h2>
+<div class="home_banner_div home_banner_ys2" style=" background-position:0 30px; ">
+<p class="text-left">认证代理服务/项目 管理服务/保修<br>处理/经销商审核</p>
+<span><a href="{ZL:GetNodeLinkUrl(43)/}">>>更多</a></span>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="home_banner_c">
+<div class="container">
+<a class="home_banner_c2" href="/">ENGLISH</a>
+</div>
+</div>
+<div class="home_banner_d home_banner_d1">
+<a href="#our_service"><p>更多信息</p></a>
+</div>
+</div>
+</div>
+</div>
+<div  id="our_service"></div>
+<div class="title_1 title_1f">
+<p class="text-center title_p1">我们的服务</p>
+</div>
+
+<div class="section">
+<div id="home_roll">
+<div class="container-fluid padding0">
+<div class="home_roll">
+<div class="rollBox">
+<div class="LeftBotton"><img src="{$CssDir/}images/trangle_left_icon.png"  alt=""  onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"  style="display:none" id="d2" /></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Cont" id="ISL_Cont">
+<div class="ScrCont">
+<div id="List1"> 
+<div class="pic">
+<a title="法规与认证" href="{ZL:GetNodeLinkUrl(20)/}#market_sub1"><img class="img-responsive" alt="法规与认证" src="/UploadFiles/saless/jpg/2015/8/201508051728084303.jpg"></a>
+<h3><a title="法规与认证" href="{ZL:GetNodeLinkUrl(20)/}#market_sub1">法规与认证</a></h3>
+</div>
+
+<div class="pic">
+<a title="市场研究" href="{ZL:GetNodeLinkUrl(20)/}#market_sub2"><img class="img-responsive" alt="市场研究" src="/UploadFiles/saless/jpg/2015/8/201508051733354520.jpg"></a>
+<h3><a title="市场研究" href="{ZL:GetNodeLinkUrl(20)/}#market_sub2">市场研究</a></h3>
+</div>
+
+<div class="pic">
+<a title="数据产品" href="{ZL:GetNodeLinkUrl(20)/}#market_sub3"><img class="img-responsive" alt="数据产品" src="/UploadFiles/saless/jpg/2015/8/201508051735030310.jpg"></a>
+<h3><a title="数据产品" href="{ZL:GetNodeLinkUrl(20)/}#market_sub3">数据产品</a></h3>
+</div>
+
+<div class="pic">
+<a title="进入中国市场" href="{ZL:GetNodeLinkUrl(41)/}#market_sub1"><img class="img-responsive" alt="进入中国市场" src="/UploadFiles/saless/jpg/2015/8/201508051736118435.jpg"></a>
+<h3><a title="进入中国市场" href="{ZL:GetNodeLinkUrl(41)/}#market_sub1">进入中国市场</a></h3>
+</div>
+
+<div class="pic">
+<a title="进入国际市场" href="{ZL:GetNodeLinkUrl(41)/}#market_sub2"><img class="img-responsive" alt="进入国际市场" src="/UploadFiles/saless/jpg/2015/8/201508051737049866.jpg"></a>
+<h3><a title="进入国际市场" href="{ZL:GetNodeLinkUrl(41)/}#market_sub2">进入国际市场</a></h3>
+</div>
+
+<div class="pic">
+<a title="销售与服务" href="{ZL:GetNodeLinkUrl(41)/}#market_sub3"><img class="img-responsive" alt="销售与服务" src="/UploadFiles/saless/jpg/2015/8/201508051737451964.jpg"></a>
+<h3><a title="销售与服务" href="{ZL:GetNodeLinkUrl(41)/}#market_sub3">销售与服务</a></h3>
+</div>
+
+<div class="pic">
+<a title="人员发展与辅导" href="{ZL:GetNodeLinkUrl(41)/}#market_sub4"><img class="img-responsive" alt="人员发展与辅导" src="/UploadFiles/ourservice/jpg/2015/8/201508211558390846.jpg"></a>
+<h3><a title="人员发展与辅导" href="{ZL:GetNodeLinkUrl(41)/}#market_sub4">人员发展与辅导</a></h3>
+</div>
+
+<div class="pic">
+<a title="供应链管理" href="{ZL:GetNodeLinkUrl(41)/}#market_sub5"><img class="img-responsive" alt="供应链管理" src="/UploadFiles/saless/jpg/2015/8/201508051739230004.jpg"></a>
+<h3><a title="供应链管理" href="{ZL:GetNodeLinkUrl(41)/}#market_sub5">供应链管理</a></h3>
+</div>
+
+<div class="pic">
+<a title="认证代理服务" href="{ZL:GetNodeLinkUrl(26)/}#market_sub1"><img class="img-responsive" alt="认证代理服务" src="/UploadFiles/saless/jpg/2015/8/201508051741482924.jpg"></a>
+<h3><a title="认证代理服务" href="{ZL:GetNodeLinkUrl(26)/}#market_sub1">认证代理服务</a></h3>
+</div>
+
+<div class="pic">
+<a title="项目管理服务" href="{ZL:GetNodeLinkUrl(26)/}#market_sub2"><img class="img-responsive" alt="项目管理服务" src="/UploadFiles/ourservice/jpg/2015/8/201508211600521364.jpg"></a>
+<h3><a title="项目管理服务" href="{ZL:GetNodeLinkUrl(26)/}#market_sub2">项目管理服务</a></h3>
+</div>
+
+<div class="pic">
+<a title="质量担保索赔处理" href="{ZL:GetNodeLinkUrl(26)/}#market_sub3"><img class="img-responsive" alt="质量担保索赔处理" src="/UploadFiles/saless/jpg/2015/8/201508051744434658.jpg"></a>
+<h3><a title="质量担保索赔处理" href="{ZL:GetNodeLinkUrl(26)/}#market_sub3">质量担保索赔处理</a></h3>
+</div>
+
+<div class="pic">
+<a title="经销网点审计" href="{ZL:GetNodeLinkUrl(26)/}#market_sub4"><img class="img-responsive" alt="经销网点审计" src="/UploadFiles/ourservice/jpg/2015/8/201508211601454886.jpg"></a>
+<h3><a title="经销网点审计" href="{ZL:GetNodeLinkUrl(26)/}#market_sub4">经销网点审计</a></h3>
+</div> 
+<!--{ZL.Label id="输出文章_图片标题简介" NodeID="44" ShowNum="12" TitleNum="30"/}-->
+</div>
+<div id="List2"></div>
+</div>
+</div>
+<div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" ><img src="{$CssDir/}images/service_right_icon.png"  alt=""   onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" class=" pull-right" id="d3"  style="display:none" /></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="title_2 title_1f">
+<p class="text-center title_p2">全球足迹</p>
+</div>
+<div class="world_map">
+<div class="container">
+<img src="{$CssDir/}images/world_map_ch.jpg" class="img-responsive" usemap="#world_map"/>
+<map name="world_map">
+<area href="#" shape="rect" coords="246,160,120,250"></area>
+<area href="#" shape="rect" coords="338,350,446,420"></area>
+<area href="#" shape="rect" coords="530,110,560,140"></area>
+<area href="#" shape="rect" coords="590,370,650,410"></area>
+<area href="#" shape="rect" coords="750,80,850,110"></area>
+<area href="#" shape="rect" coords="840,150,900,180"></area>
+<area href="#" shape="rect" coords="760,190,860,210"></area>
+<area href="#" shape="rect" coords="880,200,940,220"></area>
+<area href="#" shape="rect" coords="750,250,860,280"></area>
+</map>
+</div>
+</div>
+<!--底部-->
+<div class="foot foot1">
+<div class="container">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="wap_f_div1">
+<a href="/"><img src="{$CssDir/}images/foot_icon.png" class="img-responsive" alt=""/></a> 
+<p>Copyright 2011-2015 Dynaso.com.cn.
+迅孚技术咨询有限公司 版权所有
+ICP: 京ICP备09049616号-1
+</p>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 foot_o">
+<ul class="list-unstyled">
+{ZL.Label id="输出文章_标题简介" NodeID="21" ShowNum="4" TitleNum="30" SynNum="200" /}
+</ul>
+<div class="clearfix"></div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding0">
+<div class="wap_f_div4">
+<ul class="list-unstyled">
+<li><a href="{ZL:GetInfoUrl(129)/}">关于我们</a></li>
+<li><a href="{ZL:GetNodeListUrl(20)/}">市场情报</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(41)/}">商业咨询</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(26)/}">外包服务</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(29)/}">客户及合作伙伴</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(33)/}">新闻与活动</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(43)/}">加入我们</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--版权信息-->
+<div class="navbar-fixed-bottom copyright_info">
+<div class="container">
+<div class="copyright_info_l">
+<a href="http://www.linkedin.com/company/dynaso-technical-consulting-co-ltd?trk=biz-companies-cym" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('1');"><i class="fa fa-weixin"></i></a>
+<a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('2');"><i class="fa fa-play-circle fa-spin"></i></a>
+<a href="{ZL:GetNodeLinkUrl(45)/}" class="copyright_info_ld" style="padding-left:30px; padding-right:30px;">报告下载</a>
+</div>
+<div class="pull-right copyright_info_r">
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-offset-2">
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">迅孚官方微信：汽车新市场</h4>
+</div>
+<div class="modal-body"> 
+<img src="{$CssDir/}images/erweima.jpg" class="center-block img-responsive" alt="迅孚官方微信：汽车新市场" />
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">迅孚公司宣传片</h4>
+</div>
+<div class="modal-body"> 
+<div id="myModah3"></div>
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script>
+//左右滚动效果
+var Speed = 3; //速度(毫秒)
+var Space = 7; //每次移动(px)
+var PageWidth = 400; //翻页宽度
+var fill = 0; //整体移位
+var MoveLock = false;
+var MoveTimeObj;
+var Comp = 0;
+var AutoPlayObj = null;
+GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+GetObj('ISL_Cont').scrollLeft = fill;
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);}
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();}
+AutoPlay();
+function GetObj(objName)
+{
+if(document.getElementById)
+return eval('document.getElementById("'+objName+'")')
+else
+return eval('document.all.'+objName)
+}
+function AutoPlay()
+{//自动滚动
+clearInterval(AutoPlayObj);
+AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',3000); //间隔时间
+}
+function ISL_GoUp()
+{ //上翻开始
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+MoveTimeObj = setInterval('ISL_ScrUp();',Speed);
+}
+function ISL_StopUp()
+{ //上翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0)
+{
+Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+CompScr();
+}
+else
+MoveLock = false;
+AutoPlay();
+}
+function ISL_ScrUp()
+{ //上翻动作
+if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth}
+GetObj('ISL_Cont').scrollLeft -= Space ;
+}
+function ISL_GoDown(){ //下翻
+clearInterval(MoveTimeObj);
+if(MoveLock) return;
+clearInterval(AutoPlayObj);
+MoveLock = true;
+ISL_ScrDown();
+MoveTimeObj = setInterval('ISL_ScrDown()',Speed);
+}
+function ISL_StopDown(){ //下翻停止
+clearInterval(MoveTimeObj);
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 )
+{
+Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+CompScr();
+}
+else{MoveLock = false;}
+AutoPlay();
+}
+function ISL_ScrDown()
+{ //下翻动作
+if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;}
+GetObj('ISL_Cont').scrollLeft += Space ;
+}
+function CompScr()
+{
+var num;
+if(Comp == 0){MoveLock = false;return;}
+if(Comp < 0)
+{ //上翻
+if(Comp < -Space)
+{
+Comp += Space;
+num = Space;
+}
+else
+{
+num = -Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft -= num;
+setTimeout('CompScr()',Speed);
+}
+else
+{ //下翻
+if(Comp > Space)
+{
+Comp -= Space;
+num = Space;
+}
+else
+{
+num = Comp;
+Comp = 0;
+}
+GetObj('ISL_Cont').scrollLeft += num;
+setTimeout('CompScr()',Speed);
+}
+}
+
+//触控效果
+window.onload=function(){
+var home_roll=document.getElementById("home_roll");
+var d2=document.getElementById("d2");
+var d3=document.getElementById("d3");
+home_roll.onmouseover=function(){
+d2.style.display="block";
+d3.style.display="block";
+}
+home_roll.onmouseout=function(){
+d2.style.display="none";
+d3.style.display="none";
+}
+}
+
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+function showdiag(n){
+	if(n==1)
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function(e){
+			$("#myModal").modal('show'); 
+		}) 
+	else
+		$("#myModah3").load("/Class_35/NodePage.aspx",function(e){
+			$("#myModal1").modal('show'); 
+		})  
+} 
+$(".close").click(function(e) {
+    $("#myModah3").html("");
+});
+</script>

@@ -1,0 +1,135 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="{$CssDir/}js/power-slider.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ckplayer/ckplayer.js" charset="utf-8"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="list_img2 top_img" style="position:relative;">
+<div class="container">
+<div class="list_img_c pull-right">
+<a href="{ZL:GetNodeLinkUrl(19)/}">中文</a>
+</div>
+</div>
+<div id="breadcrumb" style="height:1px; position:absolute; top:265px; bottom:0; width:100%;"></div>
+</div>
+<div class="wap_breadcrumb">
+<span></span>
+<div class="container padding0">
+<ol class="breadcrumb">
+<li><a href="/">Dynaso</a></li>
+<li><a href="{ZL:GetInfoUrl(1)/}">About us</a></li>
+<li class="active">{SField sid="文章模型数据源标签" FD="Title" page="0"/}</li>
+</ol>
+</div>
+</div> 
+<div class="container">
+<div class="vision_con">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 vision_con_l">
+<h1>CEO Message</h1>
+<p>
+<img src="{$CssDir/}images/vis_person.jpg" class="img-responsive" />
+Dynaso was founded in 2005 at a time when China
+joined the World Trade Organization and accelerated
+the integration into the world economic system. Since
+setbacks and challenges have come up on market
+access and local business growth for both international
+companies entering the China market and Chinese
+companies expanding overseas market in the early
+time. Dynaso has seized this opportunity to timely
+adjust the business direction to define our market
+value as helping clients smoothly launch products in
+the target market, effectively reduce the risks from
+industrial policies and products in conformity with the
+standards and assist the clients to improve the products competitiveness in the target market.</p>
+<p>In the last decade, Dynaso and clients have witnessed and benefited from the rapid development
+of China automobile market. Meanwhile, I am proud of Dynaso’s growth from a startup with only 2
+staff to a developing professional service company with branches in several cities, cultivating a
+cross-cultural understanding and communication professional team. Our clients come from Fortune
+500 automobile and parts companies, as well as small-scale luxury brands companies; large-scale
+trading and service enterprises, as well as government professional institutions and associations.
+From this year, we begin to provide market research and consultant service regarding application
+of Connected Vehicles to large insurance firm.</p>
+<p>There is no doubt that our clients are richly experienced in international trade or investment under
+different cultural and economic backgrounds. They finally choose Dynaso as partner or service
+provider, because Dynaso deeply comprehends the responsibilities to clients, fulfills the 
+professional and behavior standard expected by clients, and establishes the brand reputation and
+reliability, which is also the basis that Dynaso exists. </p>
+<p>Our purpose is to help business owners, entrepreneurs and executives achieve the success they
+want for themselves and their businesses. Our focus is on giving our clients the tools they can
+apply to build their business and solve business problems for years to come. We always feel
+grateful for the trust of clients; we constantly stick on the business concept and ethics of “Being
+your trusted partner – building successful clients and employees.” to create values for clients and
+help staff to develop. This is the only way we can achieve our grand vision and become an
+admirable and valuable professional service company.</p>
+<p>Thanks for your attention and support!</p>
+<div class="text-right">
+<img src="{$CssDir/}images/pic21.jpg" alt="Our Vision" /><br>
+<span style="margin-right:15px;">June 23,2015</span>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="wap_right">
+<div class="about_list about_list_sc" id="navbar-example2">
+<div class="about_list_sct">ABOUT US</div>
+<ul class="nav navbar-nav">
+<li id="lt_p1"><a href="{ZL:GetInfoUrl(1)/}">Introduction</a></li>
+<li id="lt_p2"><a href="{ZL:GetInfoUrl(2)/}#breadcrumb">Our Value</a></li>
+<li id="lt_p3"><a href="{ZL:GetInfoUrl(3)/}#breadcrumb">Our Vision</a></li>
+</ul>
+</div>
+<div class="about_news">
+<div class="about_news_c" id="about_news">
+<ul class="list-unstyled sliderbox">
+{ZL.Label id="输出指定节点最新列表" NodeID="6" ShowNum="10" TitleNum="30" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+$(function () {
+	$("#about_news").powerSlider({delayTime:3000,sliderNum:5}); 
+})
+$().ready(function(e) {
+    $('#lt_p{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}').addClass("active");
+});
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

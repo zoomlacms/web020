@@ -1,0 +1,278 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="文章模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="文章模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script> 
+<script type="text/javascript" src="/ckplayer/ckplayer.js?v=47" charset="utf-8"></script>
+<style>
+.eve_p1 strong { float:left; margin-right:20px;}
+.eve_p1 span { margin-left:0; margin-top:15px; float:left; margin-right:30px; width:280px; }
+.about_year .nav { float:none; width:120px;}
+.about_year .nav li { float:none; text-align:right;}
+.about_year .nav li a{ padding:0; line-height:50px; height:50px; font-size:18px; font-weight:bold; color:#333;}
+.about_year .nav li.active a { background:url(/Template/DyanSO/style/images/car_bg.png) left no-repeat;  color:#ff6400;}
+.about_year .nav li.active a:hover { background:url(/Template/DyanSO/style/images/car_bg.png) left no-repeat;}
+.about_year .nav li a:hover { background:none;}
+#navbar-example2 { position:fixed; top:50%; margin-top:-275px; margin-left:-140px;z-index: 999;}
+</style>
+</head>
+<body data-target="#navbar-example2" data-offset="160" data-spy="scroll">
+{ZL.Label id="全站头部"/}
+<div class="list_img2 top_img">
+<div class="container">
+<div class="list_img_c pull-right">
+<a href="{ZL:GetNodeLinkUrl(19)/}">中文</a>
+</div>
+</div>
+</div>
+<div class="wap_breadcrumb">
+<span></span>
+<div class="container padding0">
+<ol class="breadcrumb">
+<li><a href="/">Dynaso</a></li>
+<li><a href="{ZL:GetInfoUrl(1)/}">About us</a></li>
+<li class="active">{SField sid="文章模型数据源标签" FD="Title" page="0"/}</li>
+</ol>
+</div>
+</div> 
+<div class="container">
+<div class="list_m">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div class="wap_intr_left">
+<p class="intr_p1">Founded in 2005, Dynaso is a key regional specialist consultancy and professional service
+company in automotive and transportation industry. We help global companies tackle the complex
+challenges of the industry across areas of international market access, business growth and
+building competitive advantage, through dedicated teams and custom-built programs. </p>
+<p class="intr_p2">We provide  unrivaled expertise in the areas of:</p>
+<ul class="list-unstyled intr_ul">
+<li>- Market intelligence</li>
+<li>- Business consulting</li>
+<li>- Outsourcing service</li>
+</ul>
+<p>Today, our clients include dozens of most prestigious organizations – public and private–in China, 
+North America, Europe, Japan and Southeast Asia, ranging from well-known Fortune 500, to 
+small but unique high-end brands. </p>
+<p>Headquartered in Beijing, China, we have offices in Shanghai, Singapore and Melbourne, with
+alliance partners in automotive markets around the world. We speak mandarin, English, French and
+Japanese, and the team has a strong cross-cultural understanding and communication competence.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="wap_right">
+<div class="about_list about_list_sc">
+<div class="about_list_sct">ABOUT US</div>
+<ul class="nav navbar-nav">
+<li id="lt_p1"><a href="{ZL:GetInfoUrl(1)/}">Introduction</a></li>
+<li id="lt_p2"><a href="{ZL:GetInfoUrl(2)/}#breadcrumb">Our Value</a></li>
+<li id="lt_p3"><a href="{ZL:GetInfoUrl(3)/}#breadcrumb">Our Vision</a></li>
+</ul>
+</div>
+<div class="about_news">
+<div class="about_news_c" id="about_news">
+<ul class="list-unstyled sliderbox">
+{ZL.Label id="输出指定节点最新列表" NodeID="6" ShowNum="10" TitleNum="30" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="intro_year">
+<a id="move_car"><img src="{$CssDir/}images/car.png" alt="年份"></a>
+<ul class="list-unstyled">
+<li class="active"><span>2005</span></li>
+<li><span>2006</span></li>
+<li><span>2007</span></li>
+<li><span>2008</span></li>
+<li><span>2009</span></li>
+<li><span>2010</span></li>
+<li><span>2011</span></li>
+<li><span>2012</span></li>
+<li><span>2013</span></li>
+<li><span>2014</span></li>
+<li><span>2015</span></li>
+</ul>
+</div>
+<div class="intro_cnt">
+<ul class="list-unstyled">
+<li class="active">
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2005
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><strong>Company Founded</strong><br>on 28 July 2005</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2006
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><strong>Motor Vehicle Type Approval Handbook for China Compulsory Certificationlaunched</strong> <br>First tomarket full English digital version</span>
+<span>Localization & translation for<br><strong>PSA Peugeot Citroen</strong><br> and LionBridge</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2007
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span>GM/Opel China</span>
+<span>Toyota (China) Technical center </span>
+<span>Offering <strong>market research service</strong></span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2008
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><strong>Jaguar Land Rover </strong><br/>Contract for China homologation and market research service</span>
+<span>Contact signed with <strong>Toyota Motors</strong> for parts CCC data management</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2009
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span>Contract signed with <strong>Liebherr</strong> for China homologation service</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2010
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><strong>GM/Opel</strong> brand for China homologatio</span>
+<span><strong>Beijing Office relocated</strong> to Eastern Ocean Center</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2011
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><storng>Aston Martin</strong><br />Contract for China homologation service</span>
+<span>Presentation of Dynaso at Toyota North America Technical Center (TEMA)</span>
+<span> Provide market research service for<br><strong>Volkswagen Group China (VGC)</strong></span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2012
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span><strong>Dynaso Singapore</strong> established for<br>overseas market</span>
+<span>Service contract with<br><strong>Fisker automotive</strong></span>
+<span>Mr. James Humphreys and<br>Mr. Masayuki Okada joined Dynaso</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2013
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span>Service contract with<br><strong>NEVS/SAAB</strong></span>
+<span>Service contract with<br><strong>McLaren Automotive</strong></span>
+<span>Dynaso Shanghai office open</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2014
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span> Service contract with<br><strong>BMW/Alpina</strong></span>
+<span>On-site service contract with<br><strong>Daimler China</strong></span>
+<span><strong>Lotus cars</strong> Contract for China<br>homologation service</span>
+</div>
+<div class="clearfix"></div>
+</li>
+<li>
+<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 intro_cnt_year">
+2015
+</div>
+<div class="col-lg-11 col-md-11 col-sm-10 col-xs-9 intro_cnt_li">
+<span>Dynaso <strong>logo</strong> changed and<br><strong>Shanghai office relocated</strong></span>
+<span>Service contract with<br><strong>Adria Mobil</strong></span>
+<span>Service contract with<br><strong>Allianz/AGA</strong></span>
+</div>
+<div class="clearfix"></div>
+</li> 
+</ul>
+</div>
+</div> 
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script> 
+ 
+$().ready(function(e) {
+    $('#lt_p{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}').addClass("active");
+});
+
+$(function(){
+$(".nav li").hover(function(){
+$(this).find(".subnav").show();
+$(this).find(".home_nav_a").css({});
+},function(){
+$(this).find(".subnav").hide();
+$(this).find(".home_nav_a").css({"background":"","border-top":"","color":"","padding-top":""});
+});
+});
+
+var timer = null;
+var yindex=0;
+$().ready(function(e) {
+    timer = setInterval(function(){
+	 		nextMove();
+	},2000);
+	$(".intro_year").mouseenter(function(e) {
+        clearInterval(timer);	
+    }).mouseleave(function(e) {
+        timer = setInterval(function(){
+	 		nextMove();
+		},2000);
+    });; 
+});
+function nextMove(){
+	if(yindex<$(".intro_year li").length-1){
+		yindex++;
+		$("#move_car").animate({"left":yindex*80+"px"},500);
+		$(".intro_year li").removeClass("active");
+		$(".intro_year li").eq(yindex).addClass("active");
+		$(".intro_cnt li").removeClass("active");
+		$(".intro_cnt li").eq(yindex).addClass("active");
+	} 	
+}
+function showdiag(n){
+	if(n==1)  
+		$("#myModah3").load("/Class_35/NodeNews.aspx",function() {
+			$("#myModal").modal('show');
+		}); 
+	else 
+		$("#myModah3").load("/Class_35/NodePage.aspx",function() {
+			$("#myModal1").modal('show');
+		}); 
+} 
+</script>

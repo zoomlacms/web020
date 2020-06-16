@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>836</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;nav class="navbar navbar-default navbar-fixed-top nav_adjust"&gt;
+&lt;div class="container"&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand" href="/"&gt;&lt;img src="{$LogoUrl/}" class="img-responsive img_adjust" alt="{$SiteName/}"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(1)/}" class="home_nav_a"&gt;ABOUT US&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:120px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(1)/}"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(2)/}#breadcrumb"&gt;Our Value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(3)/}#breadcrumb"&gt;Our Vision&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}" class="home_nav_a"&gt;MARKET INTELLIGENCE&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:220px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}#market_sub1"&gt;Regulations &amp; Homologation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}#market_sub2"&gt;Marketing Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}#market_sub3"&gt;Marketing Data Products&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}" class="home_nav_a"&gt;CONSULTANCY&lt;/a&gt;
+&lt;ul class="subnav list-unstyled"  style="width:260px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}#market_sub1"&gt;Enter China Market&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}#market_sub2"&gt;Go To Global Market&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}#market_sub3"&gt;Sales &amp; Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}#market_sub4"&gt;People Development &amp; Coaching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}#market_sub5"&gt;Parts Supply Chain Management&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}" class="home_nav_a"&gt;OUTSOURCING&lt;/a&gt;
+&lt;ul class="subnav list-unstyled"  style="width:220px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}#market_sub1"&gt;Homologation Agent Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}#market_sub2"&gt;Project Management Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}#market_sub3"&gt;Warranty Claims Processing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}#market_sub4"&gt;Dealer Audits&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}" class="home_nav_a"&gt;CLIENT &amp; PARTNER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(104)/}#breadcrumb" class="home_nav_a"&gt;NEWS &amp; EVENT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(40)/}#breadcrumb" class="home_nav_a"&gt;JOIN US&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

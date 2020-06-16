@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>843</LabelID>
+    <LabelName>中文版全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;nav class="navbar navbar-default navbar-fixed-top nav_adjust nav_adjust1"&gt;
+&lt;div class="container"&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand" href="{ZL:GetNodeLinkUrl(19)/}"&gt;&lt;img src="{$LogoUrl/}" class="img-responsive img_adjust" alt="{$SiteName/}"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(129)/}" class="home_nav_a"&gt;关于我们&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:120px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(129)/}"&gt;企业介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(130)/}#breadcrumb"&gt;我们的价值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(131)/}#breadcrumb"&gt;我们的愿景&lt;/a&gt;&lt;/li&gt;
+&lt;/ul
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(20)/}" class="home_nav_a"&gt;市场情报&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:120px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(20)/}#market_sub1"&gt;法规与认证&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(20)/}#market_sub2"&gt;市场研究&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeListUrl(20)/}#market_sub3"&gt;数据产品&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}" class="home_nav_a"&gt;商业咨询&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:120px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}#market_sub1"&gt;进入中国市场&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}#market_sub2"&gt;国际市场准入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}#market_sub3"&gt;销售与服务&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}#market_sub4"&gt;人员发展与辅导&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}#market_sub5"&gt;供应链管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(26)/}" class="home_nav_a"&gt;外包服务&lt;/a&gt;
+&lt;ul class="subnav list-unstyled" style="width:140px;"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(26)/}#market_sub1"&gt;认证代理服务&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(26)/}#market_sub2"&gt;项目管理服务&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(26)/}#market_sub3"&gt;质量担保索赔处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(26)/}#market_sub4"&gt;经销商网点审计&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(29)/}" class="home_nav_a"&gt;客户及合作伙伴&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(305)/}#breadcrumb" class="home_nav_a"&gt;新闻与活动&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(43)/}" class="home_nav_a"&gt;加入我们&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

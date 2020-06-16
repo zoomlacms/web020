@@ -1,0 +1,119 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>837</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;!--底部--&gt;
+&lt;div class="foot"&gt;
+&lt;div class="container"&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding10"&gt;
+&lt;div class="wap_f_div1"&gt;
+&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/foot_icon.png" class="img-responsive" alt=""/&gt;&lt;/a&gt;
+&lt;p&gt;{$Copyright/}&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding0 foot_o"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;p class="f_div2_title"&gt;Beijing Office&lt;/p&gt;
+&lt;p class="f_div2_text"&gt;Add: Unit 1708, East Ocean Centre,&lt;br&gt;A-24 Jianguomen Outer, Avenue,&lt;br&gt;Chaoyang District, Beijing, 100004&lt;br&gt;Tel: (86 10) 6015 6013 / 6017 / 6023&lt;br&gt;E-mail: service@dynaso.com.cn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;p class="f_div2_title"&gt;Shanghai Office&lt;/p&gt;
+&lt;p class="f_div2_text"&gt;Add: Unit 505, International Automobile&lt;br&gt;City Tower, No. 888 South Moyu Road,&lt;br&gt;Anting Town, Shanghai, 201805&lt;br&gt;Tel: (86 21) 5953 3389 / 3382&lt;br&gt;E-mail: shanghai@dynaso.com.cn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;p class="f_div2_title"&gt;Singapore Office&lt;/p&gt;
+&lt;p class="f_div2_text"&gt;Add: 420 North Bridge Road, # 05-03&lt;br&gt;North Bridge Centre, Singapore, 188727&lt;br&gt;E-mail: singapore@dynaso.com.cn&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;p class="f_div2_title"&gt;Melbourne Office&lt;/p&gt;
+&lt;p class="f_div2_text"&gt;Add: P.O. Box 546 Berwick, 3806&lt;br&gt;Melbourne, Australia&lt;br&gt;E-mail: melbourne@dynaso.com.cn&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding0"&gt;
+&lt;div class="wap_f_div4"&gt;
+&lt;ul class="list-unstyled"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(1)/}"&gt;ABOUT US&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(10)/}"&gt;MARKET INTELLIGENCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(37)/}"&gt;CONSULTANCY&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}"&gt;OUTSOURCING&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}"&gt;CLIENT &amp; PARTNER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(104)/}"&gt;NEWS &amp; EVENT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(40)/}"&gt;JOIN US&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--版权信息--&gt;
+&lt;div class="navbar-fixed-bottom copyright_info"&gt;
+&lt;div class="container"&gt;
+&lt;div class="copyright_info_l"&gt;
+&lt;a href="http://www.linkedin.com/company/dynaso-technical-consulting-co-ltd?trk=biz-companies-cym" target="_blank"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('1');" &gt;&lt;i class="fa fa-weixin"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="javascript:void(0)" data-toggle="modal" onclick="showdiag('2');"&gt;&lt;i class="fa fa-play-circle fa-spin"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(45)/}" class="copyright_info_ld"&gt;Report Download&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="pull-right copyright_info_r"&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 col-lg-offset-2"&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal-dialog modal-lg"&gt;
+&lt;div class="modal-content"&gt;
+&lt;div class="modal-header"&gt;
+&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class="modal-title" id="myModalLabel"&gt;Dynaso Official WeChat: Auto New Market&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class="modal-body"&gt; 
+&lt;img src="/Template/DyanSO/style/images/erweima.jpg" class="center-block img-responsive" alt="Dynaso Official WeChat: Auto New Market" /&gt;
+&lt;/div&gt;
+&lt;div class="modal-footer"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+&lt;div class="modal-dialog modal-lg"&gt;
+&lt;div class="modal-content"&gt;
+&lt;div class="modal-header"&gt;
+&lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+&lt;h4 class="modal-title" id="myModalLabel"&gt;DynaSo Company Vedio&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class="modal-body"&gt; 
+&lt;div id="myModah3"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal-footer"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt; </LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

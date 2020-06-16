@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>847</LabelID>
+    <LabelName>输出文章列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>列表专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示个数|TitleNum,30,1,标题长度</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_Article on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_Article.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.CreateTime,{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_Article.author</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID or NodeID in (select NodeID from ZL_Node where ParentID=@NodeID)) and status=99</LabelWhere>
+    <LabelOrder>{table1}.dbo.ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style="padding-left:30px;"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/div&gt;
+&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center"&gt;{Field="author"/}&lt;/div&gt;
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  text-center"&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-M-d)/}&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+{/Repeate}
+
+</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>DyanSO</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

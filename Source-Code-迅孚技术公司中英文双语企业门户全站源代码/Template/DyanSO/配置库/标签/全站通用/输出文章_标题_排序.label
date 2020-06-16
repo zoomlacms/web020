@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>849</LabelID>
+    <LabelName>输出文章_标题_排序</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示个数</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel</LabelTable>
+    <LabelField>GeneralID,Title</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID or NodeID in (select NodeID from ZL_Node where ParentID=@NodeID)) and status=99</LabelWhere>
+    <LabelOrder>OrderID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;p class="lt_p{Field="GeneralID"/}"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}#breadcrumb"&gt;{Field="Title"/}&lt;/a&gt;&lt;/p&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>DyanSO</DataSourceType>
+    <ConnectString>DBO</ConnectString>
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>
